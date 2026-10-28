@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+<head>
+    <meta charset="utf-8"/>
+    <base href="/">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'functionality_storage': 'granted',
+            'personalization_storage': 'denied',
+            'security_storage': 'granted',
+            'wait_for_update': 500
+        });
+
+        gtag('consent', 'default', {
+            'analytics_storage': 'granted',
+            'region': ['AU', 'BR', 'CA', 'CN', 'IN', 'JP', 'MY', 'NZ', 'PH', 'PK', 'SG', 'US']
+        });
+
+        gtag('set', 'ads_data_redaction', true);
+        gtag('set', 'url_passthrough', true);
+    </script>
+    <script>
+        (function () {
+            try {
+                var name = 'solidjobs.cookie-consent';
+                var m = document.cookie.match(new RegExp('(?:^|;\\s*)' + name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '=([^;]*)'));
+                if (!m) return;
+                var prefs = JSON.parse(decodeURIComponent(m[1]));
+                if (!prefs || typeof prefs.analytics !== 'boolean' || typeof prefs.marketing !== 'boolean') return;
+                var g = function (v) { return v ? 'granted' : 'denied'; };
+                gtag('consent', 'update', {
+                    'analytics_storage': g(prefs.analytics),
+                    'ad_storage': g(prefs.marketing),
+                    'ad_user_data': g(prefs.marketing),
+                    'ad_personalization': g(prefs.marketing)
+                });
+            } catch (e) { /* świadomie pomijamy — awaria tutaj nie może blokować GTM */ }
+        })();
+    </script>
+    <script>
+        (function () {
+            var path = window.location.pathname;
+            if (path.startsWith('/manage') || path.startsWith('/admin')) {
+                return;
+            }
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-M96SNJF');
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="keywords" content="ogłoszenia, oferty pracy, praca IT, rekrutacja, platforma rekrutacyjna, praca programista, praca junior, praca senior, praca regular, praca tester, praca backend, praca frontend"/>
+    <meta name="description" content="Oferty pracy dla specjalistów oraz narzędzia wspomagające proces rekrutacji. SOLID.Jobs to dużo więcej niż job board.">
+    <title>SOLID.Jobs – Platforma rekrutacyjna dla specjalistów</title>
+
+    <link type="image/x-icon" rel="shortcut icon" href="/img/favicons/favicon.ico"/>
+    <link rel="preconnect" href="https://cdn.solid.jobs"/>
+    <link rel="preconnect" href="https://kit.fontawesome.com" crossorigin="">
+    <link rel="preconnect" href="https://ka-p.fontawesome.com" crossorigin="">
+
+    <!-- Self-hosted fonts (critical preloads) -->
+    <link rel="preload" fetchpriority="high" href="/assets/fonts/montserrat-v31-latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/assets/fonts/montserrat-v31-latin_latin-ext-500.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/assets/fonts/montserrat-v31-latin_latin-ext-600.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="/assets/fonts/space-grotesk-v22-latin_latin-ext-500.woff2" as="font" type="font/woff2" crossorigin="">
+
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SOLID.Jobs">
+    <meta property="og:title" content="SOLID.Jobs – Platforma rekrutacyjna dla specjalistów">
+    <meta property="og:description" content="Oferty pracy dla specjalistów oraz narzędzia wspomagające proces rekrutacji. SOLID.Jobs to dużo więcej niż job board.">
+    <meta property="og:url" content="https://solid.jobs">
+    <meta property="og:image" content="https://cdn.solid.jobs/og-default.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@SolidJobs">
+    <meta name="robots" content="index, follow">
+    <!-- Pliki dla modeli językowych: /llms.txt (skrót) oraz /llms-full.txt (wersja rozszerzona). -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="SOLID.Jobs llms.txt"/>
+    <!-- Kanały RSS dla ofert pracy (sekcje /offers i /praca) oraz bloga. -->
+    <link rel="alternate" type="application/rss+xml" href="/rss/job-offers" title="SOLID.Jobs - Oferty pracy"/>
+    <link rel="alternate" type="application/rss+xml" href="/rss/blog" title="SOLID.Jobs - Blog"/>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://solid.jobs/#website",
+        "name": "SOLID.Jobs",
+        "url": "https://solid.jobs",
+        "inLanguage": "pl-PL",
+        "publisher": { "@id": "https://solid.jobs/#organization" },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://solid.jobs/offers/it?searchTerm={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://solid.jobs/#organization",
+        "name": "SOLID.Jobs",
+        "url": "https://solid.jobs",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://solid.jobs/img/logo.png",
+            "contentUrl": "https://solid.jobs/img/logo.png"
+        },
+        "description": "Platforma rekrutacyjna dla specjalistów. Oferty pracy ze 100% jawnymi widełkami wynagrodzeń w IT, inżynierii, marketingu, sprzedaży, HR, logistyce i finansach. Narzędzia rekrutacyjne, ścieżki kariery i raporty o rynku pracy w Polsce.",
+        "foundingDate": "2019",
+        "email": "kontakt@solid.jobs",
+        "telephone": "+48883004203",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "contactType": "customer support",
+                "email": "kontakt@solid.jobs",
+                "telephone": "+48883004203",
+                "areaServed": "PL",
+                "availableLanguage": ["Polish", "English"]
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/company/solid.jobs/",
+            "https://www.facebook.com/solidjobsPL",
+            "https://x.com/SolidJobs",
+            "https://www.youtube.com/@SOLID_Jobs",
+            "https://github.com/solid-company/solid-jobs-feature-requests",
+            "https://pl.trustpilot.com/review/solid.jobs"
+        ]
+    }
+    </script>
+<link rel="stylesheet" href="styles-K4UR53M4.css"></head>
+<body class="mat-app-background" ngcm="">
+    <!-- Anti-FOUC: wczesne ustawienie dark-theme aby uniknąć migotania -->
+    <script>
+        (function() {
+            try {
+                var match = document.cookie.match(/solidjobs\.theme=([^;]*)/);
+                var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var isDark = false;
+
+                if (match) {
+                    var val = decodeURIComponent(match[1]).replace(/^"|"$/g, '');
+                    isDark = val === 'dark' || val === '"dark"';
+                } else {
+                    isDark = prefersDark;
+                }
+
+                document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
+                document.documentElement.classList.toggle('dark-theme', isDark);
+                document.body.classList.toggle('dark-theme', isDark);
+            } catch(e) {
+                document.documentElement.style.colorScheme = 'light';
+            }
+        })();
+    </script>
+    <app-root></app-root>
+
+    <script src="https://kit.fontawesome.com/e11b0bf180.js" crossorigin="anonymous" defer=""></script>
+<link rel="modulepreload" href="chunk-BiypBapu.js"><link rel="modulepreload" href="chunk-DQI0S4NQ.js"><link rel="modulepreload" href="chunk-CFqMkD5E.js"><link rel="modulepreload" href="chunk-BnPvSq3x.js"><link rel="modulepreload" href="chunk-CrIMVpa2.js"><link rel="modulepreload" href="chunk-C5c71DWU.js"><link rel="modulepreload" href="chunk-D21xYI-h.js"><link rel="modulepreload" href="chunk-BaJVXpul.js"><link rel="modulepreload" href="chunk-BPQiYZKX.js"><link rel="modulepreload" href="chunk-Bjx09YpJ.js"><script src="polyfills-Q66S77JI.js" type="module"></script><script src="main-M557ZF7E.js" type="module"></script></body>
+</html>

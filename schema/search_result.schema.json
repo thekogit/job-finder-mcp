@@ -1,0 +1,393 @@
+{
+  "$defs": {
+    "JobOffer": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "link": {
+          "title": "Link",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "company": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Company"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "description_truncated": {
+          "default": false,
+          "title": "Description Truncated",
+          "type": "boolean"
+        },
+        "requirements": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Requirements",
+          "type": "array"
+        },
+        "requirements_confidence": {
+          "default": "not_found",
+          "enum": [
+            "structured",
+            "section",
+            "not_found"
+          ],
+          "title": "Requirements Confidence",
+          "type": "string"
+        },
+        "nice_to_have": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Nice To Have",
+          "type": "array"
+        },
+        "salary": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/SalaryRange"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Salary"
+        },
+        "work_mode": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/WorkMode"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Work Mode"
+        },
+        "raw_work_mode": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Raw Work Mode"
+        },
+        "contract_types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Contract Types",
+          "type": "array"
+        },
+        "posted_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Posted At"
+        },
+        "valid_until": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Valid Until"
+        },
+        "date_confidence": {
+          "default": "unknown",
+          "enum": [
+            "exact",
+            "relative",
+            "unknown"
+          ],
+          "title": "Date Confidence",
+          "type": "string"
+        },
+        "first_seen_at": {
+          "title": "First Seen At",
+          "type": "string"
+        },
+        "last_checked_at": {
+          "title": "Last Checked At",
+          "type": "string"
+        },
+        "is_valid": {
+          "default": true,
+          "title": "Is Valid",
+          "type": "boolean"
+        },
+        "also_on": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Also On",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "link",
+        "source",
+        "title",
+        "description",
+        "first_seen_at",
+        "last_checked_at"
+      ],
+      "title": "JobOffer",
+      "type": "object"
+    },
+    "SalaryContract": {
+      "enum": [
+        "uop",
+        "b2b",
+        "uz",
+        "uod",
+        "other",
+        "unknown"
+      ],
+      "title": "SalaryContract",
+      "type": "string"
+    },
+    "SalaryGrossNet": {
+      "enum": [
+        "gross",
+        "net",
+        "unknown"
+      ],
+      "title": "SalaryGrossNet",
+      "type": "string"
+    },
+    "SalaryPeriod": {
+      "enum": [
+        "hour",
+        "day",
+        "month",
+        "year"
+      ],
+      "title": "SalaryPeriod",
+      "type": "string"
+    },
+    "SalaryRange": {
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Min"
+        },
+        "max": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max"
+        },
+        "currency": {
+          "default": "PLN",
+          "title": "Currency",
+          "type": "string"
+        },
+        "period": {
+          "$ref": "#/$defs/SalaryPeriod",
+          "default": "month"
+        },
+        "gross_net": {
+          "$ref": "#/$defs/SalaryGrossNet",
+          "default": "unknown"
+        },
+        "contract": {
+          "$ref": "#/$defs/SalaryContract",
+          "default": "unknown"
+        },
+        "raw": {
+          "title": "Raw",
+          "type": "string"
+        }
+      },
+      "required": [
+        "raw"
+      ],
+      "title": "SalaryRange",
+      "type": "object"
+    },
+    "SourceFetchStatus": {
+      "enum": [
+        "ok",
+        "partial",
+        "blocked",
+        "error",
+        "disabled",
+        "timeout"
+      ],
+      "title": "SourceFetchStatus",
+      "type": "string"
+    },
+    "SourceReport": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/$defs/SourceFetchStatus"
+        },
+        "count": {
+          "default": 0,
+          "title": "Count",
+          "type": "integer"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        }
+      },
+      "required": [
+        "id",
+        "status"
+      ],
+      "title": "SourceReport",
+      "type": "object"
+    },
+    "WorkMode": {
+      "enum": [
+        "onsite",
+        "hybrid",
+        "remote"
+      ],
+      "title": "WorkMode",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "query": {
+      "additionalProperties": true,
+      "title": "Query",
+      "type": "object"
+    },
+    "generated_at": {
+      "title": "Generated At",
+      "type": "string"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/SourceReport"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "total": {
+      "title": "Total",
+      "type": "integer"
+    },
+    "offset": {
+      "title": "Offset",
+      "type": "integer"
+    },
+    "returned": {
+      "title": "Returned",
+      "type": "integer"
+    },
+    "jobs": {
+      "items": {
+        "$ref": "#/$defs/JobOffer"
+      },
+      "title": "Jobs",
+      "type": "array"
+    }
+  },
+  "required": [
+    "query",
+    "generated_at",
+    "sources",
+    "total",
+    "offset",
+    "returned",
+    "jobs"
+  ],
+  "title": "SearchResult",
+  "type": "object"
+}

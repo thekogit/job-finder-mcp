@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Security | Glassdoor</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0caa41" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="https://www.glassdoor.com/favicon.ico" sizes="any" />
+    <style type="text/css">
+      body,
+      html {
+        background: #fff;
+        font-family:
+          Helvetica Neue,
+          HelveticaNeue,
+          Helvetica,
+          Arial,
+          sans-serif;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      }
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        color: #20262e;
+      }
+      .header {
+        -webkit-box-shadow: inset 0 -1px 0 0 #dee0e3;
+        box-shadow: inset 0 -1px 0 0 #dee0e3;
+      }
+      .header .center {
+        height: 45px;
+      }
+      .header .center:before {
+        content: "";
+        height: 100%;
+        margin-right: -0.25em;
+      }
+      .header .center:before,
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .center {
+        margin: 0 auto;
+        width: 800px;
+      }
+      .article-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+      }
+
+      .article,
+      .center {
+        box-sizing: border-box;
+      }
+      .article {
+        background-color: #fff;
+      }
+      .col-article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        max-width: 480px;
+      }
+      .text-article {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 15px;
+      }
+      .cferror_details {
+        font-size: 13px;
+        list-style: none;
+        background: #f6f7f8;
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin: 20px 0 0;
+        color: #4a5568;
+        line-height: 1.8;
+        overflow-wrap: break-word;
+        align-self: stretch;
+        box-sizing: border-box;
+      }
+      .cferror_details strong {
+        color: #20262e;
+      }
+      .captcha-container {
+        align-self: stretch;
+        text-align: center;
+        overflow: hidden;
+      }
+      .captcha-container iframe {
+        max-width: 100%;
+      }
+      .article-link {
+        color: #008050;
+      }
+      .body-text {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      h1 {
+        color: #00060c;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+        margin-bottom: 32px;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin: 16px 0;
+      }
+      @media only screen and (max-width: 767px) {
+        .header .center {
+          text-align: center;
+        }
+        .center {
+          padding: 0;
+          width: 100%;
+        }
+        .article {
+          margin: 0 21.5px;
+          max-width: none;
+        }
+        .col-article {
+          gap: 0;
+        }
+        .article-container {
+          flex-direction: column;
+          gap: 75.2px;
+          margin-top: 7px;
+        }
+        .body-text {
+          margin-bottom: 32px;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        .center {
+          margin: 0;
+          padding: 0 14px;
+          width: 100%;
+        }
+      }
+    </style>
+  <meta http-equiv="refresh" content="360"></head>
+  <body>
+    <div class="header">
+      <div class="center">
+        <span data-test="logo-svg" role="img" aria-label="Glassdoor"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="120"
+            height="36"
+            fill="none"
+            viewBox="0 0 120 36"
+            aria-hidden="true"
+          >
+            <path
+              fill="#00A264"
+              fill-rule="evenodd"
+              d="M115.399 14.355h4.539c.034 0 .062-.03.062-.067V9.812c-.001-1.094-.363-1.984-1.096-2.606-.674-.572-1.686-.917-3.039-.985-.034-.002-.062.027-.062.063v1.688c0 .033.025.06.056.063 1.187.083 2.09.466 2.09 1.8l-2.55.001c-.034 0-.062.03-.062.067v4.386c0 .036.028.066.062.066m-98.18 3.623h-5.504c-.086 0-.141.077-.141.153v2.956c0 .093.07.153.141.153h1.955v2.38c0 1.77-.432 2.72-1.955 2.72-1.272 0-2.175-.771-2.175-3.169V16.26c0-2.296.684-3.372 2.199-3.372 1.366 0 1.923.839 1.923 2.406v.89c0 .093.071.152.142.152h3.384c.086 0 .141-.076.141-.152V15.14c.031-3.718-1.947-5.684-5.527-5.684s-5.912 2.127-5.912 6.6v7.395c0 4.405 2.716 6.32 5.731 6.32 3.376 0 5.731-1.33 5.731-6.252v-5.397a.147.147 0 0 0-.133-.152h-.008.008zm10.536 7.876h-5.292V9.979c0-.094-.07-.153-.141-.153h-3.33c-.086 0-.14.076-.14.153v19.289c0 .093.07.152.14.152h8.755c.086 0 .141-.076.141-.152v-3.253c0-.093-.07-.153-.141-.153h.008zm49.73-9.748c0-4.447 2.284-6.616 5.778-6.616 3.447 0 5.763 2.177 5.747 6.616v7.048c0 4.507-2.143 6.582-5.747 6.582s-5.778-2.033-5.778-6.582zm5.778 10.25c1.46 0 2.065-1.067 2.065-3.337v-6.752c0-2.27-.589-3.371-2.065-3.371s-2.065 1.143-2.065 3.371v6.752c0 2.279.605 3.337 2.065 3.337M96.195 9.49c-3.494 0-5.779 2.169-5.779 6.616v7.048c0 4.55 2.175 6.582 5.779 6.582s5.747-2.075 5.747-6.582v-7.048c.016-4.439-2.3-6.616-5.747-6.616M98.26 23.02c0 2.27-.605 3.337-2.065 3.337s-2.065-1.059-2.065-3.337v-6.752c0-2.228.589-3.371 2.065-3.371s2.065 1.1 2.065 3.371zM65.285 9.82h4.993v.017c3.376 0 5.92 1.855 5.92 6.43v6.718c0 4.532-2.481 6.43-5.96 6.43h-4.953c-.071 0-.142-.06-.142-.153V9.99c0-.085.055-.17.142-.17m4.797 16.028c1.507 0 2.45-1.034 2.45-3.448l.007.008v-5.887c0-2.44-.989-3.423-2.489-3.423h-1.374v12.75zM47.078 9.456h-.055c-3.439 0-5.252 2.118-5.252 5.295 0 3.307 2.136 4.846 3.898 6.115l.341.247.409.297.001.001.001.001c1.244.9 2.204 1.594 2.204 3.123 0 1.28-.785 1.788-1.696 1.813-1.005.025-1.735-.805-1.735-1.847v-1.686a.19.19 0 0 0-.189-.194h-3.219c-.11 0-.188.084-.188.195v1.71c0 3.38 1.9 5.253 5.245 5.253 3.344 0 5.37-1.915 5.37-5.278 0-3.502-2.074-5.015-3.881-6.335l-.06-.044a43 43 0 0 0-.596-.428c-1.238-.88-2.388-1.697-2.388-2.969 0-1.262.8-1.855 1.727-1.855.998 0 1.704.771 1.704 1.788v1.49c0 .11.087.195.189.195h3.219c.11 0 .188-.084.188-.194V14.7c.008-3.32-1.994-5.227-5.237-5.244m11.563 0h.055c3.243.017 5.237 1.923 5.237 5.244v1.449c0 .11-.078.194-.188.194h-3.22a.19.19 0 0 1-.188-.194v-1.491c0-1.017-.706-1.788-1.704-1.788-.926 0-1.727.593-1.727 1.855 0 1.271 1.15 2.089 2.388 2.969q.298.21.596.428l.06.044c1.808 1.32 3.881 2.833 3.881 6.335 0 3.363-2.026 5.278-5.37 5.278s-5.245-1.872-5.245-5.252v-1.712c0-.11.079-.194.188-.194h3.22c.102 0 .188.084.188.195V24.5c0 1.042.73 1.872 1.735 1.847.91-.025 1.696-.534 1.696-1.813 0-1.53-.96-2.223-2.203-3.123q-.202-.145-.411-.3l-.338-.244-.003-.002c-1.763-1.269-3.9-2.808-3.9-6.115 0-3.177 1.815-5.295 5.253-5.295m55.47 6.398v-1.618c0-2.465-1.9-4.405-4.083-4.405h-6.485c-.078 0-.141.068-.141.152v19.273c0 .084.063.152.141.152h3.172c.086 0 .141-.076.141-.152v-8.023h1.555c1.445 0 1.9.576 1.9 2.042v5.964c0 .093.071.152.141.152h3.274a.153.153 0 0 0 .149-.152v-5.854c0-2-.51-3.279-1.813-3.804 1.311-.576 2.049-1.728 2.049-3.727m-3.549.678c0 .804-.597 1.448-1.335 1.448h-2.41v-4.896h2.41c.738 0 1.335.644 1.335 1.44v2.008m-77.1-6.701h3.377c.063 0 .125.05.141.127l4.381 19.247c.04.11-.04.212-.141.212h-3.235c-.055 0-.126-.051-.141-.128l-.691-3.447h-4.036l-.69 3.447a.15.15 0 0 1-.142.127H29.05c-.094 0-.165-.101-.141-.211L33.32 9.958a.14.14 0 0 1 .142-.127m1.642 6.116-1.335 6.659h2.7l-1.334-6.659-.016.093zM4.6 9.827H.062c-.034 0-.062.03-.062.066v4.385c0 .037.028.067.062.067h2.55c0 1.335-.903 1.718-2.09 1.801a.06.06 0 0 0-.056.063v1.689c0 .035.029.064.062.062 1.353-.068 2.365-.413 3.039-.985.733-.622 1.095-1.512 1.096-2.606V9.893c0-.037-.028-.067-.062-.067"
+              clip-rule="evenodd"
+            ></path></svg
+        ></span>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="article-container">
+        <div class="col-article">
+          <div class="article text-article lang en-us" lang="en">
+            <h1>Humans only</h1>
+            <p class="body-text">
+              Glassdoor has been built on the contributions of real employees
+              and job seekers. We use advanced security systems to keep our site
+              safe and prevent misuse or unauthorized access.
+            </p>
+            <p class="body-text">
+              In rare cases, security protections may mistakenly block
+              legitimate activity from real users. If you have been mistakenly
+              blocked from accessing our site, please review our
+              <a
+                class="article-link"
+                href="https://help.glassdoor.com/s/article/Troubleshooting-Tips?language=en_US"
+                >Help Center article</a
+              >
+              for troubleshooting steps.
+            </p>
+          </div>
+
+          <div class="article text-article lang fr-fr" lang="fr">
+            <h1>Réservé aux humains</h1>
+            <p class="body-text">
+              Glassdoor est fondé sur les contributions de véritables employés
+              et chercheurs d’emploi. Nous utilisons des systèmes de sécurité
+              sophistiqués pour assurer la sécurité de notre site et empêcher
+              toute utilisation abusive ou tout accès non autorisé.
+            </p>
+            <p class="body-text">
+              Dans de rares cas, ces protections de sécurité peuvent bloquer par
+              erreur les activités légitimes d’utilisateurs réels. Si votre
+              accès à notre site a été bloqué par erreur, veuillez consulter
+              l’<a
+                class="article-link"
+                href="https://aide.glassdoor.fr/s/article/Astuces-de-depannage?language=fr"
+                >article de notre centre d’aide</a
+              >
+              pour prendre connaissance des étapes de dépannage.
+            </p>
+          </div>
+          <div class="article text-article lang de-de" lang="de">
+            <h1>Nur für Menschen</h1>
+            <p>
+              Glassdoor wurde auf den Beiträgen echter Mitarbeiter:innen und
+              Stellensuchenden aufgebaut. Wir verwenden fortschrittliche
+              Sicherheitssysteme, um unsere Seite sicher zu halten und
+              Missbrauch oder unbefugten Zugriff zu verhindern.
+            </p>
+            <p>
+              In seltenen Fällen können Sicherheitsvorkehrungen irrtümlich
+              legitime Aktivitäten von echten Nutzerinnen und Nutzern
+              blockieren. Falls Ihr Zugriff auf unsere Seite versehentlich
+              gesperrt wurde, lesen Sie bitte unseren
+              <a
+                href="https://hilfe.glassdoor.de/s/article/Tipps-zur-Fehlerbehebung?language=de"
+                >Artikel im Hilfebereich</a
+              >
+              mit Schritten zur Fehlerbehebung.
+            </p>
+          </div>
+          <div class="article text-article lang nl-nl" lang="nl">
+            <h1>Alleen voor mensen</h1>
+            <p>
+              Glassdoor vertrouwt op de bijdragen van echte werknemers en
+              werkzoekenden. We gebruiken geavanceerde beveiligingssystemen om
+              onze site veilig te houden en misbruik of ongeautoriseerde toegang
+              te voorkomen.
+            </p>
+            <p>
+              In zeldzame gevallen kunnen beveiligingsmaatregelen onbedoeld
+              legitieme activiteiten van echte gebruikers blokkeren. Als je
+              onverwacht geen toegang krijgt tot onze site, bekijk dan ons
+              <a
+                href="https://help.glassdoor.nl/s/article/Tips-voor-het-oplossen-van-problemen?language=nl_NL"
+                >Helpcenter-artikel</a
+              >
+              voor stappen om het probleem op te lossen.
+            </p>
+          </div>
+          <div class="article text-article lang es-es" lang="es">
+            <h1>Solo personas reales</h1>
+            <p>
+              Glassdoor se basa en las contribuciones de verdaderos empleados y
+              personas que buscan empleo. Usamos sistemas de seguridad avanzados
+              para mantener la seguridad del sitio web y evitar todo uso
+              indebido o el acceso no autorizado.
+            </p>
+            <p>
+              En casos excepcionales, las medidas de seguridad pueden bloquear
+              por error la actividad de usuarios reales. Si por error no puedes
+              acceder a nuestro sitio web, consulta el
+              <a
+                href="https://ayuda.glassdoor.com.mx/s/article/Consejos-para-solucion-de-problemas?language=es"
+                >artículo en el Centro de ayuda</a
+              >
+              para saber cómo solucionar el problema.
+            </p>
+          </div>
+          <div class="article text-article lang es-419" lang="es">
+            <h1>Solo personas reales</h1>
+            <p>
+              Glassdoor se basa en las contribuciones de verdaderos empleados y
+              personas que buscan empleo. Usamos sistemas de seguridad avanzados
+              para mantener la seguridad del sitio web y evitar todo uso
+              indebido o el acceso no autorizado.
+            </p>
+            <p>
+              En casos excepcionales, las medidas de seguridad pueden bloquear
+              por error la actividad de usuarios reales. Si por error no puedes
+              acceder a nuestro sitio web, consulta el
+              <a
+                href="https://ayuda.glassdoor.com.mx/s/article/Consejos-para-solucion-de-problemas?language=es"
+                >artículo en el Centro de ayuda</a
+              >
+              para saber cómo solucionar el problema.
+            </p>
+          </div>
+          <div class="article text-article lang pt-br" lang="pt">
+            <h1>Somente humanos</h1>
+            <p>
+              O Glassdoor é baseado em contribuições de funcionários e
+              candidatos reais. Usamos sistemas avançados para manter nosso site
+              seguro e impedir uso indevido e acesso não autorizado.
+            </p>
+            <p>
+              No entanto, as proteções de segurança podem inadvertidamente
+              bloquear atividade legítima de usuários reais. Caso esse tenha
+              sido o seu caso, consulte nosso
+              <a
+                href="https://ajuda.glassdoor.com.br/s/article/Dicas-de-solu%C3%A7%C3%A3o-de-problemas?language=pt_BR"
+                >artigo da Central de ajuda</a
+              >
+              para saber como resolver seu problema.
+            </p>
+          </div>
+          <div class="article text-article lang it-it" lang="it">
+            <h1>Solo umani</h1>
+            <p>
+              Glassdoor si basa sui contributi di dipendenti e candidati reali.
+              Utilizziamo sistemi di sicurezza avanzati per mantenere il nostro
+              sito sicuro e prevenire usi impropri o accessi non autorizzati.
+            </p>
+            <p>
+              In rari casi, le protezioni di sicurezza possono bloccare
+              erroneamente attività legittime da parte di utenti reali. Se il
+              tuo accesso al nostro sito è stato bloccato per errore, puoi
+              cercare la soluzione nel nostro
+              <a
+                href="https://aiuto.glassdoor.it/s/article/Suggerimenti-per-la-risoluzione-dei-problemi?language=it"
+                >articolo del Centro assistenza</a
+              >.
+            </p>
+          </div>
+
+          <div class="article captcha-container">
+            <div class="main-wrapper" role="main"><div class="main-content"><noscript><div class="h2"><span id="challenge-error-text">Enable JavaScript and cookies to continue</span></div></noscript></div></div><script>(function(){window._cf_chl_opt = {cFPWv: 'g',cH: '9QLqBIOLXofdk8ulBdXq7hCxyQVxs5wL8HWRiMQ67bk-1791755317-1.2.1.1-GGtboInMLM5WXrw0CTt8AO8VoRlM2riNDyqWSo.O7ZTpxfJ5Ikbc7lZRFbOD29tx',cITimeS: '1791755317',cRay: 'a49111ef9d1b2d94',cTplB: '0',cTplC:1,cTplO:0,cTplV:5,cType: 'managed',cUPMDTk:"/Job/warsaw-jobs-SRCH_IL.0,6_IN193_KO7,11.htm?__cf_chl_tk=M.zrVvXLGwpf8jXwCg5O0iCXOhZM5ajRPg1WDIicDkY-1791755317-1.0.1.1-fpTCQHfbBWIM2wPWy40FHWkBTDdYP9xX4QB5K4fAiVc",cvId: '3',cZone: 'www.glassdoor.com',fa:"/Job/warsaw-jobs-SRCH_IL.0,6_IN193_KO7,11.htm?__cf_chl_f_tk=M.zrVvXLGwpf8jXwCg5O0iCXOhZM5ajRPg1WDIicDkY-1791755317-1.0.1.1-fpTCQHfbBWIM2wPWy40FHWkBTDdYP9xX4QB5K4fAiVc",md: 'IXLhonqw8FSYhpiO_532MwxFeOlhQNn.LNH7WR5h4RA-1791755317-1.2.1.1-SD6RdoKW75fOr16dWm9OhwsnRFNCCtGctsj9dHjD1qzBLYo30VDKB1xBIcybCQBxWs_ydeZLN1xthl8YdwH5In4hY2b26ijzUrq4UwDXnXYu3obGPKOkmYxyYwzYiaHX.R5LNBKbXYeBsjfRjkfjtOuKUTc4ij21JTbqMIDTLDG4h_TzA6R3bCfIDTxxoDcryNT38qlazvDV2n0bwTj8WezKUAZX5F94nIYTyaA1bWkhIcp.rjRYcTEJC56yzpezwgUfK5txICMvNOP3pYoXqwsmgGRfN_3b2CDFlSxm37rIftkpVZwPIVqNI_qoAbMWBi90f6RkDTk.Mi0qeAnBg.kV9DpoiVJOdjRW49I6FO0WzJA45vrsQqRm_psL.aPZKHycE5mUrpy3.PLwL6Y4WeYlJLb_3FqyglU_28v8L9qQ8S301WuZntRWB4eRr9mb4Dww76GXfesNB1lTolJ08UaSYTYNFcYI1tO.Gv.AdTTG524R9.UVHAK240tXm3xMw.JDIZKWKkpE.e673sWeIjXA93EDo8GZOPIvSRkHMsJBo1Ctd8a4jLJS9c4sfPstZml4FEMTSly2svrUVFJqxYpTsaMlU.gdmNR1SMpeVWVJ.4srK91n5aoNaV78RSqq0vSIgt8W3HvvlSeiQSgc.wQ8ZrNuUJiQHN40GsngiL7tFRbUrctD.9Dg8fElYJSUGp0aubJjOwGxE._QZwbGgjO2hKDvRgG3k22mxzJuKU_Fgf4.v7Gr0LqSqBDGx3ORRzarHkLk8sKt74K3sJspxpeW1WLYF5KlekdRjYpCDSjbtIu27w2_uVlt6yP9XWefBAtXzZKZT3BVbPWwSj36m4WrwR8aVTDkQVoVi4wWnME.uF_E5M1fjFRY_LZpyA9QKoCV0UpDC_ZOsPYphtfjxkvnUsp.2_yle5DyfwvcPPO.IRhpbYNEgDaMzMRcyyf5_hVtRXh2fEqFTn7YxkxFShQkoztiqatcwrb_v8D_XdtyCpzaIMNGz9P0OXFke3o0Y7q0fovONilN3NK7hMk3bucdnmq0MEYg47g..tlnXw0PcbJS_wOhbYqk.kxidhxM2VTesMV6jMyXiGABOYP44whksn3orufV37f0Ytgfv6uwgAXLi__RoQc8X_clYwj83MfbnO16ByoPC4DCvf65ZjhQPnPuTV8Q0o8CwuDChNKMX65hGTIEUkRpilqQEWkrVp6JzEeM3RBLwbOVfdbDKb4WHGVf7pE_Js2I8Udh_yI',mdrd: 'uBMQUv5zrwOPmnAXycWiwK9gNQZtIyz0EdminLtkKMM-1791755317-1.2.1.1-xtjSCxXZEWxkV0TzV1_NwtU1SZc7qgaDEEm81q5vZVDJ0NqJwxzspEwpJeTkuSNqyjJunECTcDCdGoOt0x.e8wX_z4zVs7vJ36OyLgMWeV9Jg_g4p6v9airFhOGpxwwSAo.zGZBIEQGBVtEuJKiwCNznz1YI4NHjZ5Gsr95OV9NUkA.LDFdzCU1JkSkFpxZmZXGESJehDY5XMCGdBiuN4MR6uepLnQb.5WIxZKZIzOT_2bzex0M0fuc6_NrWvMnK3r_Y.d.D5VctfruN51cdfWsI2BI7mgnEdfFiahwE9GKacnY.vIxzN2Hxpk2TmKwqqBiuW4X3X2VEl7eosEtgoOCXr3yVxLpGt6TqZIGWsTU',};var a = document.createElement('script');a.src = '/cdn-cgi/challenge-platform/h/g/orchestrate/chl_page/v1?ray=a49111ef9d1b2d94';window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;if (window.history && window.history.replaceState) {var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;history.replaceState(null, null,"/Job/warsaw-jobs-SRCH_IL.0,6_IN193_KO7,11.htm?__cf_chl_rt_tk=M.zrVvXLGwpf8jXwCg5O0iCXOhZM5ajRPg1WDIicDkY-1791755317-1.0.1.1-fpTCQHfbBWIM2wPWy40FHWkBTDdYP9xX4QB5K4fAiVc"+ window._cf_chl_opt.cOgUHash);a.onload = function() {history.replaceState(null, null, ogU);}}document.getElementsByTagName('head')[0].appendChild(a);}());</script>
+          </div>
+
+          <ul class="cferror_details">
+            <li><strong>Ray ID:</strong> a49111ef9d1b2d94</li>
+            <li id="page-timestamp"></li>
+            <li><strong>Your IP address:</strong> 217.119.75.255</li>
+            <li><strong>Cloudflare Location:</strong> PL</li>
+            <li id="requested-url"></li>
+            <li id="user-agent"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function displayTextBasedOnTld() {
+        function getTld(domain) {
+          if (
+            domain.endsWith("glassdoor.fr") ||
+            domain.endsWith("fr.glassdoor.be") ||
+            domain.endsWith("fr.glassdoor.ch") ||
+            domain.endsWith("fr.glassdoor.ca")
+          ) {
+            return "fr-fr";
+          } else if (
+            domain.endsWith("glassdoor.de") ||
+            domain.endsWith("de.glassdoor.ch") ||
+            domain.endsWith("glassdoor.at")
+          ) {
+            return "de-de";
+          } else if (
+            domain.endsWith("glassdoor.nl") ||
+            domain.endsWith("nl.glassdoor.be")
+          ) {
+            return "nl-nl";
+          } else if (domain.endsWith("glassdoor.es")) {
+            return "es-es";
+          } else if (
+            domain.endsWith("glassdoor.com.ar") ||
+            domain.endsWith("glassdoor.com.mx")
+          ) {
+            return "es-419";
+          } else if (domain.endsWith("glassdoor.com.br")) {
+            return "pt-br";
+          } else if (domain.endsWith("glassdoor.it")) {
+            return "it-it";
+          } else {
+            return "en-us";
+          }
+        }
+
+        var lang = getTld(window.location.hostname);
+
+        // Update the html lang attribute based on detected language
+        var htmlLangMap = {
+          "en-us": "en",
+          "fr-fr": "fr",
+          "de-de": "de",
+          "nl-nl": "nl",
+          "es-es": "es",
+          "es-419": "es",
+          "pt-br": "pt",
+          "it-it": "it",
+        };
+        document.documentElement.lang = htmlLangMap[lang] || "en";
+
+        var elements = document.getElementsByClassName("lang");
+        for (var i = 0, max = elements.length; i < max; i++) {
+          if (elements[i].className.indexOf(lang) === -1)
+            elements[i].style.display = "none";
+        }
+      })();
+
+      // Display page timestamp in UTC
+      (function displayTimestamp() {
+        var strong = document.createElement("strong");
+        strong.textContent = "Timestamp:";
+        var el = document.getElementById("page-timestamp");
+        el.textContent = " " + new Date().toISOString();
+        el.prepend(strong);
+      })();
+
+      // Display requested URL
+      (function displayRequestedUrl() {
+        var strong = document.createElement("strong");
+        strong.textContent = "Requested URL:";
+        var el = document.getElementById("requested-url");
+        el.textContent = " " + window.location.href;
+        el.prepend(strong);
+      })();
+
+      // Display user agent
+      (function displayUserAgent() {
+        var strong = document.createElement("strong");
+        strong.textContent = "User-Agent:";
+        var el = document.getElementById("user-agent");
+        el.textContent = " " + navigator.userAgent;
+        el.prepend(strong);
+      })();
+    </script>
+    <script>
+      // Initialize rs
+      window.isRudderstackLoading = true;
+      !(function () {
+        // Localize Rudderstack URLs by TLD
+        var hostName = window.location.hostname;
+        var tld = hostName.split(".glassdoor.")[1];
+        var rsCdnUrl = `https://rscdn.glassdoor.${tld}/v1.1/rudder-analytics.min.js`;
+        var rsDataPlaneUrl = `https://rsdp.glassdoor.${tld}`;
+        var rsApiUrl = `https://rsapi.glassdoor.${tld}`;
+
+        var e = (window.rudderanalytics = window.rudderanalytics || []);
+        ((e.methods = [
+          "load",
+          "page",
+          "track",
+          "identify",
+          "alias",
+          "group",
+          "ready",
+          "reset",
+          "getAnonymousId",
+          "setAnonymousId",
+          "getUserId",
+          "getUserTraits",
+          "getGroupId",
+          "getGroupTraits",
+        ]),
+          (e.factory = function (t) {
+            return function () {
+              var r = Array.prototype.slice.call(arguments);
+              return (r.unshift(t), e.push(r), e);
+            };
+          }));
+        for (var t = 0; t < e.methods.length; t++) {
+          var r = e.methods[t];
+          e[r] = e.factory(r);
+        }
+        ((e.loadJS = function (e, t) {
+          var r = document.createElement("script");
+          ((r.type = "text/javascript"), (r.async = !0), (r.src = rsCdnUrl));
+          var a = document.getElementsByTagName("script")[0];
+          a.parentNode.insertBefore(r, a);
+        }),
+          e.loadJS(),
+          e.load("30KYKxuwmkvKDfdianpTPrt1Qxa", rsDataPlaneUrl, {
+            configUrl: rsApiUrl,
+            onLoaded: function (rudderanalytics) {
+              window.gdGlobals = window.gdGlobals || [];
+              window.gdGlobals.push({
+                event: "rudderstackReady",
+                isBotChallengePage: true,
+              });
+            },
+          }));
+      })();
+
+      // Initialize GTM
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "gdGlobals", "GTM-PST2JZ");
+    </script>
+  </body>
+</html>

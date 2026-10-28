@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Błąd 404 strona nie istnieje</title>
+    <meta name="description" content="Strona o podanym adresie nie istnieje."/>
+    <link rel="stylesheet" type="text/css" href="/praca2/assets/styles/404.css"/>
+</head>
+<body class="page-body">
+<div class="page-wraper">
+    <div class="header">
+        <div class="container">Praca i oferty pracy w Praca.pl</div>
+    </div>
+    <header class="container">
+        <div class="logo">
+            <a title="Praca.pl - Oferty pracy - praca dla Ciebie od zaraz" href="/">
+                <img width="160" height="64" alt="Praca.pl - Oferty pracy - praca dla Ciebie od zaraz"
+                     src="/praca2/assets/images/404_page/praca_pl.svg">
+            </a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="error">
+            <p class="error__main-info">Poszukiwana strona nie została znaleziona</p>
+            <p class="error__code">Błąd 404</p>
+            <p class="error__sub-info">Upewnij się, że adres URL został wprowadzony poprawnie.<br> Przejdź do <a href="/">strony głównej</a> lub skorzystaj z wyszukiwarki.</p>
+
+        </div>
+    </div>
+    <div class="container">
+        <form class="search-box" action="/oferty-pracy.html" method="post">
+            <input type="text" name="phrase[0][label]" placeholder="słowo kluczowe, stanowisko, firma" autocomplete="off">
+            <div class="break"></div>
+            <input type="text" name="locationPhrase[0][label]" placeholder="miejscowość, województwo lub kraj" autocomplete="off">
+            <input type="hidden" name="locationPhrase[0][id]" value="null">
+            <input type="hidden" name="personalConsultingAgency" value="true">
+            <button type="submit"><img alt="Szukaj" src="/praca2/assets/images/404_page/magnifier.png"/>Szukaj</button>
+        </form>
+    </div>
+</div>
+<footer class="container site-footer">
+    <p class="footer">Copyright © 2003 - <span class="footer__year"></span> Praca.pl Sp. z o.o. Numer wydania: <span id="footer-release">16510</span> / <span class="footer__year"></span>. Wszelkie prawa
+        zastrzeżone. Powielanie, drukowanie, kopiowanie lub rozpowszechnianie w jakikolwiek sposób materiałów zawartych
+        na stronach Praca.pl jest zabronione.</p>
+    <p class="footer_txt">Praca i oferty pracy w Praca.pl</p>
+</footer>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N2MDV5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}if(localStorage.getItem('consentMode') === null){gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','personalization_storage':'denied','functionality_storage':'denied','security_storage':'denied',});}else{const lsData = JSON.parse(localStorage.getItem('consentMode')); if(!lsData['ad_user_data']){lsData['ad_user_data'] = lsData['ad_storage']; lsData['ad_personalization'] = lsData['ad_storage']; localStorage.setItem('consentMode', JSON.stringify(lsData))};gtag('consent','default',lsData);}</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N2MDV5');</script>
+<script>window.dataLayer.push({'event': 'error40x'});</script>
+<script>
+    (function() {
+        var yearPlaces = document.getElementsByClassName('footer__year');
+        var release = document.getElementById('footer-release');
+        var now = new Date();
+        [].slice.call(yearPlaces).forEach( function(year) {
+            year.innerText = now.getFullYear();
+        });
+        release.innerText = Math.round(Date.now() / 86400000)
+    })();
+</script>
+</body>
+</html>
