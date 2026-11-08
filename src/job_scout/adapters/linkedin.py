@@ -8,6 +8,7 @@ from job_scout.extract.jsonld import extract_job_posting_jsonld
 from job_scout.http import get_http_client
 from job_scout.models import JobOffer, SearchQuery, now_warsaw_iso
 from job_scout.normalize.dates import parse_date
+from job_scout.normalize.employment import normalize_employment_types
 from job_scout.normalize.location import is_warsaw_location
 from job_scout.normalize.requirements import normalize_requirements
 from job_scout.normalize.salary import parse_salary
@@ -95,7 +96,7 @@ class LinkedInAdapter(BaseAdapter):
             salary=salary,
             work_mode=work_modes,
             raw_work_mode=raw_wm,
-            contract_types=[str(emp_type)] if emp_type else [],
+            contract_types=normalize_employment_types(emp_type),
             posted_at=posted_at,
             valid_until=valid_until,
             date_confidence=date_conf,

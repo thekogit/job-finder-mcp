@@ -17,6 +17,7 @@ from job_scout.models import (
     now_warsaw_iso,
 )
 from job_scout.normalize.dates import parse_date
+from job_scout.normalize.employment import normalize_employment_types
 from job_scout.normalize.location import is_warsaw_location
 from job_scout.normalize.requirements import normalize_requirements
 from job_scout.normalize.text import html_to_plain_text, truncate_description
@@ -135,7 +136,7 @@ class NoFluffJobsAdapter(BaseAdapter):
             salary=salary,
             work_mode=work_modes,
             raw_work_mode=raw_wm,
-            contract_types=[str(emp_type)] if emp_type else [],
+            contract_types=normalize_employment_types(emp_type),
             posted_at=posted_at,
             valid_until=valid_until,
             date_confidence=date_conf,

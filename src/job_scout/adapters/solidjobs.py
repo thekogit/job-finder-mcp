@@ -16,6 +16,7 @@ from job_scout.models import (
     now_warsaw_iso,
 )
 from job_scout.normalize.dates import parse_date
+from job_scout.normalize.employment import normalize_employment_types
 from job_scout.normalize.location import is_warsaw_location
 from job_scout.normalize.requirements import normalize_requirements
 from job_scout.store import canonicalize_url, compute_job_id
@@ -117,7 +118,7 @@ class SolidJobsAdapter(BaseAdapter):
             salary=salary,
             work_mode=work_modes,
             raw_work_mode="remote" if o.get("remotePossible") else "onsite",
-            contract_types=[str(o.get("employmentType"))] if o.get("employmentType") else [],
+            contract_types=normalize_employment_types(o.get("employmentType")),
             posted_at=posted_at,
             valid_until=valid_until,
             date_confidence=date_conf,
