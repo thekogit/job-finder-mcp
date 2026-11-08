@@ -271,6 +271,56 @@
       "title": "SalaryContract",
       "type": "string"
     },
+    "SalaryFilterReport": {
+      "additionalProperties": false,
+      "description": "What the minimum-salary filter did, so excluded offers are never silent.",
+      "properties": {
+        "min_pln_month": {
+          "title": "Min Pln Month",
+          "type": "integer"
+        },
+        "basis": {
+          "enum": [
+            "nominal",
+            "uop_gross",
+            "b2b_net"
+          ],
+          "title": "Basis",
+          "type": "string"
+        },
+        "kept": {
+          "default": 0,
+          "title": "Kept",
+          "type": "integer"
+        },
+        "excluded_no_salary": {
+          "default": 0,
+          "title": "Excluded No Salary",
+          "type": "integer"
+        },
+        "excluded_non_pln": {
+          "default": 0,
+          "title": "Excluded Non Pln",
+          "type": "integer"
+        },
+        "excluded_basis_unavailable": {
+          "default": 0,
+          "title": "Excluded Basis Unavailable",
+          "type": "integer"
+        },
+        "excluded_below_min": {
+          "default": 0,
+          "title": "Excluded Below Min",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "min_pln_month",
+        "basis"
+      ],
+      "title": "SalaryFilterReport",
+      "type": "object"
+    },
     "SalaryGrossNet": {
       "enum": [
         "gross",
@@ -455,6 +505,31 @@
       },
       "title": "Jobs",
       "type": "array"
+    },
+    "salary_filter": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SalaryFilterReport"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "plan": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "The typed SearchPlan (JSON form) when search_jobs was called with return_plan=True.",
+      "title": "Plan"
     }
   },
   "required": [

@@ -174,6 +174,21 @@ class SearchQuery(BaseModel):
     verify_validity: bool = True
     limit: int = 50
     offset: int = 0
+    salary_basis: Literal["nominal", "uop_gross", "b2b_net"] = "nominal"
+
+
+class SalaryFilterReport(BaseModel):
+    """What the minimum-salary filter did, so excluded offers are never silent."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    min_pln_month: int
+    basis: Literal["nominal", "uop_gross", "b2b_net"]
+    kept: int = 0
+    excluded_no_salary: int = 0
+    excluded_non_pln: int = 0
+    excluded_basis_unavailable: int = 0
+    excluded_below_min: int = 0
 
 
 class SearchResult(BaseModel):
@@ -186,6 +201,11 @@ class SearchResult(BaseModel):
     offset: int
     returned: int
     jobs: list[JobOffer]
+    salary_filter: SalaryFilterReport | None = None
+    plan: dict[str, Any] | None = Field(
+        default=None,
+        description="The typed SearchPlan (JSON form) when search_jobs was called with return_plan=True.",
+    )
 
 
 class ValidityResult(BaseModel):

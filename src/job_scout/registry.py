@@ -174,51 +174,6 @@ class AdapterRegistry:
                 SourceReport(id=source_id, status=SourceFetchStatus.ERROR, count=0, error=str(e)),
             )
 
-    async def execute_search(
-        self,
-        query: SearchQuery,
-        enabled_overrides: dict[str, bool] | None = None,
-    ) -> tuple[list[JobOffer], list[SourceReport]]:
-        target_ids = query.sources
-        if target_ids is None:
-            target_ids = [
-                s_id
-                for s_id, a in self._adapters.items()
-                if (enabled_overrides.get(s_id) if enabled_overrides and s_id in enabled_overrides else a.enabled_by_default)
-            ]
-
-        tasks = []
-        reports: list[SourceReport] = []
-        for s_id in target_ids:
-            adapter = self._adapters.get(s_id)
-            if not adapter:
-                reports.append(
-                    SourceReport(
-                        id=s_id,
-                        status=SourceFetchStatus.ERROR,
-                        count=0,
-                        error=f"Source '{s_id}' not found in registry",
-                    )
-                )
-                continue
-            tasks.append(self._search_source(adapter, query))
-
-        if not tasks:
-            return ([], reports)
-
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-
-        all_offers: list[JobOffer] = []
-        for res in results:
-            if isinstance(res, BaseException):
-                logger.error("Unexpected error in search runner: %s", res)
-                continue
-            offers, report = res
-            reports.append(report)
-            all_offers.extend(offers)
-
-        return (all_offers, reports)
-
     async def check_validity(self, urls: list[str]) -> list[ValidityResult]:
         results: list[ValidityResult] = []
         client = get_http_client()
