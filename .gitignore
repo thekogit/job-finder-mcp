@@ -68,6 +68,7 @@ Desktop.ini
 .env.*
 *.env
 *.local
+!.env.example
 
 # Project-specific local data & cache
 .job-scout/
@@ -79,3 +80,52 @@ Desktop.ini
 # Scratchpad & temporary scripts
 scratch/
 *.tmp
+
+# --- Local agent working agreement & project notes: never published ----------
+# Agents: read AGENTS.md before changing anything, and clean up after yourself
+# (git status --short --ignored must show nothing you created by accident).
+AGENTS.md
+CLAUDE.md
+PROJECT.md
+.claude/
+.cursor/
+.aider*
+.hive/
+# Other coding agents' instruction files, settings, memories and session traces
+GEMINI.md
+CLAUDE.local.md
+.gemini/
+.codex/
+.agent/
+.agents/
+.windsurf/
+.windsurfrules
+.continue/
+.cline/
+.clinerules
+.roo/
+.kiro/
+.junie/
+.zed/
+.opencode/
+.crush/
+.goose/
+.specstory/
+.copilot/
+.github/copilot-instructions.md
+.mcp.json
+.claude.json
+*.transcript.jsonl
+
+# Local model weights and runtime (EmbeddingGemma 2 GGUF, llama.cpp build): never commit
+models/
+*.gguf
+
+# Generated skew reports: only the committed example is published
+reports/skew/*
+!reports/skew/example-fixtures.md
+
+# Build logs of the original agent run (JS-MCP-001): kept locally, not published
+PLAN.md
+GATES.md
+SOURCES_STATUS.md
