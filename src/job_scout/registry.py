@@ -139,6 +139,41 @@ class AdapterRegistry:
                 ),
             )
 
+    def enabled_source_ids(self, enabled_overrides: dict[str, bool] | None = None) -> list[str]:
+        ids: list[str] = []
+        for s_id, adapter in self._adapters.items():
+            enabled = adapter.enabled_by_default
+            if enabled_overrides and s_id in enabled_overrides:
+                enabled = enabled_overrides[s_id]
+            if enabled:
+                ids.append(s_id)
+        return ids
+
+    async def run_listing(
+        self, source_id: str, query: SearchQuery
+    ) -> tuple[list[JobOffer], SourceReport]:
+        """Run one listing task. Never raises: every failure becomes a SourceReport."""
+        adapter = self._adapters.get(source_id)
+        if adapter is None:
+            return (
+                [],
+                SourceReport(
+                    id=source_id,
+                    status=SourceFetchStatus.ERROR,
+                    count=0,
+                    error=f"Source '{source_id}' not found in registry",
+                ),
+            )
+        try:
+            return await self._search_source(adapter, query)
+        except Exception as e:  # _search_source handles adapter errors; this is a backstop
+            logger.error("Unexpected error in search runner for %s: %s", source_id, e)
+            self._last_error[source_id] = str(e)
+            return (
+                [],
+                SourceReport(id=source_id, status=SourceFetchStatus.ERROR, count=0, error=str(e)),
+            )
+
     async def execute_search(
         self,
         query: SearchQuery,
