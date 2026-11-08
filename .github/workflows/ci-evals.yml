@@ -1,0 +1,25 @@
+name: ci-evals
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - name: Install (locked)
+        run: uv sync --frozen
+      - name: Lint
+        run: uv run ruff check .
+      - name: Types
+        run: uv run mypy --strict src/ evals/
+      - name: Offline tests (live board tests excluded)
+        run: uv run pytest -q -m "not live"
+      - name: Structural skew self-test on fixtures (Level 1)
+        run: uv run python -m evals.skew.run --fixtures --embedder tfidf --report "$RUNNER_TEMP/skew.md"
