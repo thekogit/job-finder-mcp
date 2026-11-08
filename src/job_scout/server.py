@@ -1,14 +1,18 @@
 import json
 import logging
 from datetime import datetime, timedelta
+from typing import Literal
 
 from mcp.server.fastmcp import FastMCP
 
+from job_scout.generation.grounded import OpenAICompatibleClient, ground_deterministic, ground_offer
+from job_scout.generation.salary import SalaryBasis, evaluate_salary_min
+from job_scout.generation.search_plan import build_plan, execute_plan
 from job_scout.http import setup_logging
 from job_scout.models import (
     WARSAW_TZ,
     JobOffer,
-    SalaryPeriod,
+    SalaryFilterReport,
     SearchQuery,
     SearchResult,
     SourceStatus,
@@ -39,28 +43,25 @@ def _is_within_max_age(posted_at: str | None, max_age_days: int) -> bool:
         return True
 
 
-def _matches_salary_min(offer: JobOffer, min_pln_month: int) -> bool:
-    if not offer.salary:
-        return True
-
-    for s in offer.salary:
-        val = s.max if s.max is not None else s.min
-        if val is None:
-            continue
-        # Convert to monthly equivalent
-        multiplier = 1.0
-        if s.period == SalaryPeriod.HOUR:
-            multiplier = 168.0
-        elif s.period == SalaryPeriod.DAY:
-            multiplier = 21.0
-        elif s.period == SalaryPeriod.YEAR:
-            multiplier = 1.0 / 12.0
-
-        monthly_val = float(val) * multiplier
-        if monthly_val >= float(min_pln_month):
-            return True
-
-    return False
+def _apply_salary_min(
+    offers: list[JobOffer], min_pln_month: int, basis: SalaryBasis
+) -> tuple[list[JobOffer], SalaryFilterReport]:
+    report = SalaryFilterReport(min_pln_month=min_pln_month, basis=basis)
+    kept: list[JobOffer] = []
+    for offer in offers:
+        outcome = evaluate_salary_min(offer, min_pln_month, basis)
+        if outcome == "kept":
+            kept.append(offer)
+            report.kept += 1
+        elif outcome == "no_salary":
+            report.excluded_no_salary += 1
+        elif outcome == "non_pln":
+            report.excluded_non_pln += 1
+        elif outcome == "basis_unavailable":
+            report.excluded_basis_unavailable += 1
+        else:
+            report.excluded_below_min += 1
+    return kept, report
 
 
 @mcp.tool()
@@ -75,6 +76,8 @@ async def search_jobs(
     verify_validity: bool = True,
     limit: int = 50,
     offset: int = 0,
+    salary_basis: Literal["nominal", "uop_gross", "b2b_net"] = "nominal",
+    return_plan: bool = False,
 ) -> SearchResult:
     """Search fresh, verified job offers in Warsaw or remote open to Poland.
 
@@ -86,12 +89,20 @@ async def search_jobs(
         sources: List of source IDs to query. Defaults to all enabled platforms.
         max_age_days: Maximum age of postings in days (1 to 60). Default is 14 days.
         work_modes: Filter by work mode: ["onsite", "hybrid", "remote"].
-        salary_min_pln_month: Minimum monthly PLN gross salary equivalent.
+        salary_min_pln_month: Minimum monthly salary in PLN. Offers without a salary, or
+            with salary only in another currency, are excluded (and counted in
+            salary_filter) when this is set.
+        salary_basis: What salary_min_pln_month is compared with. "nominal" (default):
+            the period-converted PLN amount, whatever the contract (B2B net and UoP gross
+            on one axis). "uop_gross": only UoP bands, as gross (net bands
+            converted with the 2026 tax rules). "b2b_net": only B2B
+            bands stated as net of VAT.
         only_with_salary: If True, returns only postings that display published compensation.
         include_metro: If True, includes Warsaw metropolitan suburbs (e.g. Piaseczno, Pruszków).
         verify_validity: If True, checks that returned URLs are active and non-expired.
         limit: Number of results to return (1 to 200). Default is 50.
         offset: Offset for pagination. Default is 0.
+        return_plan: If True, the result includes the typed search plan that was executed.
     """
     if limit < 1 or limit > 200:
         raise ValueError("limit must be between 1 and 200")
@@ -114,6 +125,8 @@ async def search_jobs(
         "verify_validity": verify_validity,
         "limit": limit,
         "offset": offset,
+        "salary_basis": salary_basis,
+        "return_plan": return_plan,
     }
 
     cache_key = f"search:{json.dumps(query_params, sort_keys=True)}"
@@ -133,40 +146,39 @@ async def search_jobs(
         verify_validity=verify_validity,
         limit=limit,
         offset=offset,
+        salary_basis=salary_basis,
     )
 
-    all_offers, source_reports = await registry.execute_search(search_query)
+    plan = build_plan(search_query, registry)
+    salary_report: SalaryFilterReport | None = None
 
-    # Filter by age
-    filtered = [o for o in all_offers if _is_within_max_age(o.posted_at, max_age_days)]
+    def filter_and_dedup(all_offers: list[JobOffer]) -> list[JobOffer]:
+        nonlocal salary_report
+        filtered = [o for o in all_offers if _is_within_max_age(o.posted_at, max_age_days)]
 
-    # Filter by work mode
-    if work_modes:
-        target_modes = {m.lower() for m in work_modes}
-        filtered = [
-            o
-            for o in filtered
-            if o.work_mode and any(str(m.value).lower() in target_modes for m in o.work_mode)
-        ]
+        if work_modes:
+            target_modes = {m.lower() for m in work_modes}
+            filtered = [
+                o
+                for o in filtered
+                if o.work_mode and any(str(m.value).lower() in target_modes for m in o.work_mode)
+            ]
 
-    # Filter by salary presence
-    if only_with_salary:
-        filtered = [o for o in filtered if o.salary and len(o.salary) > 0]
+        if only_with_salary:
+            filtered = [o for o in filtered if o.salary and len(o.salary) > 0]
 
-    # Filter by minimum salary
-    if salary_min_pln_month:
-        filtered = [o for o in filtered if _matches_salary_min(o, salary_min_pln_month)]
+        if salary_min_pln_month:
+            filtered, salary_report = _apply_salary_min(
+                filtered, salary_min_pln_month, salary_basis
+            )
 
-    # Save to store and deduplicate
-    saved_offers = [store.save_or_update_job(o) for o in filtered]
-    deduped = store.deduplicate_offers(saved_offers)
+        grounded = [ground_deterministic(o) for o in filtered]
+        saved_offers = [store.save_or_update_job(o) for o in grounded]
+        return store.deduplicate_offers(saved_offers)
 
-    # Optional validity check on returned results
-    if verify_validity and deduped:
-        urls_to_check = [o.link for o in deduped[:limit]]
-        validity_res = await registry.check_validity(urls_to_check)
-        validity_map = {v.url: v.is_valid for v in validity_res}
-        deduped = [o for o in deduped if validity_map.get(o.link, True)]
+    execution = await execute_plan(plan, registry, after_listings=filter_and_dedup)
+    deduped = execution.offers
+    source_reports = execution.reports
 
     total_count = len(deduped)
     paginated = deduped[offset : offset + limit]
@@ -179,6 +191,8 @@ async def search_jobs(
         offset=offset,
         returned=len(paginated),
         jobs=paginated,
+        salary_filter=salary_report,
+        plan=plan.model_dump(mode="json") if return_plan else None,
     )
 
     # Cache for 30 minutes (1800s per Section 7.4)
@@ -221,6 +235,10 @@ async def get_job_details(url: str) -> JobOffer:
             last_checked_at=now_iso,
             is_valid=True,
         )
+
+    # Seniority / work mode with verbatim quotes. The LLM is used only when LLM_* settings
+    # are configured and only for fields the deterministic parsers left empty.
+    offer = await ground_offer(offer, OpenAICompatibleClient.from_env())
 
     # Persist and cache for 6 hours (21600s per Section 7.4)
     updated = store.save_or_update_job(offer)

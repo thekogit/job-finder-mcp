@@ -1,0 +1,4621 @@
+{
+ "board": "pracuj",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "html:listing": {
+   "samples": 2,
+   "min_links": 57,
+   "max_links": 64
+  },
+  "jsonld:detail": {
+   "samples": 4,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.@content": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.baseSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.datePosted": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.description": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.employerOverview": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.experienceRequirements": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.hiringOrganization": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.image": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.industry": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobBenefits": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.@content": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.address": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.address.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.address.addressCountry": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.address.addressLocality": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.address.addressRegion": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.address.postalCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.jobLocation.address.streetAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.address": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.address.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.address.addressCountry": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.address.addressLocality": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.address.addressRegion": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.address.postalCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.jobLocation.geo.address.streetAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.jobLocation.geo.latitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.jobLocation.geo.longitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.jobLocation.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.responsibilities": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.validThrough": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    }
+   }
+  },
+  "next_data:detail": {
+   "samples": 4,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.appGip": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.assetPrefix": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.buildId": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.gssp": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.isExperimentalCompile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.isFallback": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.page": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.__N_SSP": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps._sentryBaggage": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps._sentryTraceData": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ABOUT": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ABSENCE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ACCOUNT": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ADD_OFFER": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ADS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ADVICE_FOR_EMPLOYERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_APPLICATION_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_APPSTORE_APP": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_BELL_NOTIFICATIONS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_BUSINESS_TRIP_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_COOKIES_DATA_COLLECTION_POLICY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_COOKIES_PARTNERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_COOKIES_POLICY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_CV_CREATOR_LANDING_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_CV_CREATOR_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_DIGITAL_SERVICES_ACT": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_DOCS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYERS_PROFILES": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYER_COST_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYER_HELP": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYER_PROFILE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_E_RECRUITER": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_E_RECRUITER_BLOG": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_FACEBOOK": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_FIRST_JOB": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_FOR_EMPLOYERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_GOOGLE_PLAY_APP": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_GRUPA_PRACUJ": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_HELP": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_HIRE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_HOMEPAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_HOURLY_PAYCHECK_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_HR_CHALLENGES": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_HR_GLOSSARY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_INSTAGRAM": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_IT_GLOSSARY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOBICON": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_ALERTS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_BLUE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_IT": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_SALES": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_TECH": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_UA": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_SUPEROFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_KADROMIERZ": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_LABOR_OFFICES": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_LEAVE_COMPENSATION_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_LOGIN": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_LOGOUT": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_MATERNITY_LEAVE_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_MULTI_APPLYING": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_MY_SEND_JOB_REQUESTS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_OFFERS_ARCHIVE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_PARTNERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_PRESS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_PRIVACY_POLICY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_PRIVACY_SETTINGS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_QUESTIONNAIRE_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_RADAR_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_RECOMMENDED_OFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_REGISTER": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_REGULATIONS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_ROBOTA": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_SALARIES": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_SALARIES_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_SALARIES_CALCULATORS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_SAVED_OFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_SETTINGS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_SOFT_GARDEN": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_THE_NETWORK": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_THE_PROTOCOL": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_THE_PROTOCOL_BLOG": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_TIKTOK": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_TIPS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_VAT_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.businessVariables.LINK_YOUTUBE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.mutations": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].dehydratedAt": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryHash": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.aiSummary": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.appType": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.applyProxy": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.applyProxy.applyUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.applyProxy.multiApplying": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.applyProxy.multiApplyingEnabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.applyUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.ats": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.ats.formMode": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.ats.formUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.ats.multiApplying": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.ats.optionalCv": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.contactPhone": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.contactPhone.number": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.contactPhone.prefix": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.eRecruiter": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.eRecruiter.formMode": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.eRecruiter.formUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.eRecruiter.multiApplying": {
+     "types": [
+      "list"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.eRecruiter.optionalCv": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.formBranding": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.formBranding.banner": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.formBranding.banner.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.formBranding.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.formBranding.logo": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.formBranding.logo.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.letter": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.oneClickApply": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.referenceNumber": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.remoteRecruitment": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition.currentRecruitment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition.currentRecruitment.acquire": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition.currentRecruitment.text": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition.futureRecruitment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition.futureRecruitment.acquire": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.agreementsAcquisition.futureRecruitment.text": {
+     "types": [
+      "null"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.optionalCv": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.questionnaireAfterApply": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.questionnaireAfterApply.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.questionnaireAfterApplyEnabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.applying.strefa.useOldQuestionnaire": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories[].parent": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories[].parent.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.categories[].parent.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.displayEmployerName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.entirelyRemoteWork": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.positionLevels": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.positionLevels[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.positionLevels[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.positionLevels[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.positionLevels[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.currency": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.currency.code": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.currency.symbol": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.from": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.salaryKind": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.salaryKind.code": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.salaryKind.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.salaryKind.pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.longForm": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.longForm.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.longForm.pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.shortForm": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.shortForm.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.timeUnit.shortForm.pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.typesOfContracts[].salary.to": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes[].attendance": {
+     "types": [
+      "null"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes[].description": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workModes[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workSchedules": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workSchedules[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workSchedules[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workSchedules[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.employment.workSchedules[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClause": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClause.longText": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClause.shortText": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClauses": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClauses[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClauses[].longText": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClauses[].shortText": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.informationClauses[].type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.isArchive": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.isWithdrawn": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.jobTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.leadingCategory": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.leadingCategory.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.leadingCategory.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.leadingCategory.parent": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.leadingCategory.parent.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.leadingCategory.parent.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.offerAbsoluteUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].abroadAddress": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].country": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].country.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].country.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].country.pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].displayAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.additionalInfo": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.buildingNumber": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.coordinates": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.coordinates.latitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.coordinates.longitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.district": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.flatNumber": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.street": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.address.zipCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.location": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.location.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].inlandLocation.location.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].isAbroad": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].region": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].region.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].region.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.attributes.workplaces[].region.pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].absoluteUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].children": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].children[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].children[].absoluteUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].children[].label": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].children[].relativeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].label": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs[].relativeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.canonicalUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.employerId": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupId": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.isDirectlyFromEmployer": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.jobOfferLanguage": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.jobOfferLanguage.isoCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.jobOfferWebId": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.offerURLName": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.partitionKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].label": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].label.pracujPlText": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].label.primaryTargetSiteText": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].label.text": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].model": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].model.flag": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.primaryAttributes[].model.number": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.desktopListingBanner": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.desktopListingBanner.banner": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.desktopListingBanner.banner.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.desktopListingBanner.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.listingLogo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.listingLogo.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.listingLogo.logo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.listingLogo.logo.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.mobileListingBanner": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.mobileListingBanner.banner": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.mobileListingBanner.banner.mobileBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.mobileListingBanner.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.rwdListingBanner": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.rwdListingBanner.banner": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.rwdListingBanner.banner.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.rwdListingBanner.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.searchingInWholePoland": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.searchingInWholePoland.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.superOption": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.productAddons.superOption.enabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.dateOfInitialPublicationUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.expirationDateTimeUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.expirationDateUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.isActive": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.jobOfferUrlSegment": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.jobOfferVersion": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.publicationDetails.lastPublishedUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].label": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].label.pracujPlText": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].label.primaryTargetSiteText": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].label.text": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.customItems": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.dictionaryName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.items": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.items[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.items[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.items[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.items[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.items[].primaryTargetSiteName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.secondaryAttributes[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].header": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].id": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].id.number": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].id.type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.bullets": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.bullets[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.customItems": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.customItems[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.customItems[].icon": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.customItems[].icon.rasterUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.customItems[].icon.vectorUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.customItems[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.dictionaryName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].icon": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].icon.rasterUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].icon.vectorUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.items[].primaryTargetSiteName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.paragraphs": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].model.paragraphs[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].number": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].sectionType": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].header": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].id": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].id.number": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].id.type": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.bullets": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.bullets[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.customItems": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.customItems[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.customItems[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.dictionaryName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].grubberId": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].icon": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].icon.rasterUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].icon.vectorUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].mediaType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].primaryTargetSiteName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].thumbnailUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.items[].url": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.paragraphs": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].model.paragraphs[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].number": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].sectionType": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].subSections": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].subSections[].title": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.sections[].title": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.shouldBeIndexed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.backgroundImages": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.backgroundImages[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.backgroundImages[].pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.fontColor": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.fontColor.hex": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.offerViewLogo": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.offerViewLogo.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.sectionsBackground": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.sectionsBackground.image": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.sectionsBackground.image.pracujPlBasicSizeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.sectionsBackground.useThemeColor": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.themeColor": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.style.themeColor.hex": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.textSections": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.textSections[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.textSections[].plainText": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.textSections[].sectionType": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.textSections[].textElements": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.textSections[].textElements[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.dataUpdateCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.dataUpdatedAt": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.error": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.errorUpdateCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.errorUpdatedAt": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchFailureCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchFailureReason": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchMeta": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchStatus": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.isInvalidated": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.status": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.languageCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.offerId": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.refererSubserviceType": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.user": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAbTestsCookieString": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgent": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements.gpc_ad": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements.gpc_analytic": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements.gpc_audience": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements.gpc_func": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements.gpc_social": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userAgreements.gpc_v": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userIdentifier": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userPermissions": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userPreferences": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userPreferences.locale": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.props.pageProps.userPreferences.palette": {
+     "types": [
+      "null"
+     ],
+     "presence": 4
+    },
+    "$.query": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig": {
+     "types": [
+      "dict"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.ADS_ENABLED": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.API_ALABAMA_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.API_CLIENT_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.API_INTERNAL_TRANSLATE": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.APP_NAME": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.APP_VERSION": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.CDN_PATH": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.CDN_ROOT_PATH": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.ENVIRONMENT": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.GOOGLE_MAPS_API_KEY": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.GTM_CONTAINER_ID": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.GTM_ENABLED": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.LINK_OFFER_OG_THUMBNAIL": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_COOKIE_DOMAIN": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_GVL_PURPOSES_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_GVL_VENDOR_LIST_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_TCF_CMP_ID": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_TCF_CMP_VERSION": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.SENTRY_DSN": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.SENTRY_ENABLED": {
+     "types": [
+      "bool"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.SENTRY_RELEASE_NAME": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.SENTRY_RELEASE_VERSION": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.runtimeConfig.SUPPORTED_BROWSERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 4
+    },
+    "$.scriptLoader": {
+     "types": [
+      "list"
+     ],
+     "presence": 4
+    }
+   }
+  },
+  "next_data:listing": {
+   "samples": 2,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.appGip": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.assetPrefix": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.buildId": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.gssp": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.isExperimentalCompile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.isFallback": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.page": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.__N_SSP": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps._sentryBaggage": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps._sentryTraceData": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.acceptedParameters": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.acceptedParameters[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ABOUT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ABSENCE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ACCOUNT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ADD_OFFER": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ADS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ADVICE_FOR_EMPLOYERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_APPLICATION_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_APPSTORE_APP": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_BELL_NOTIFICATIONS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_BUSINESS_TRIP_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_COOKIES_DATA_COLLECTION_POLICY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_COOKIES_PARTNERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_COOKIES_POLICY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_CV_CREATOR_LANDING_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_CV_CREATOR_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_DIGITAL_SERVICES_ACT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_DOCS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYERS_PROFILES": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYER_COST_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYER_HELP": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_EMPLOYER_PROFILE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_E_RECRUITER": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_E_RECRUITER_BLOG": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_FACEBOOK": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_FIRST_JOB": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_FOR_EMPLOYERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_GOOGLE_PLAY_APP": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_GRUPA_PRACUJ": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_HELP": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_HIRE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_HOMEPAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_HOURLY_PAYCHECK_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_HR_CHALLENGES": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_HR_GLOSSARY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_INSTAGRAM": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_IT_GLOSSARY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOBICON": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_ALERTS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_BLUE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_IT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_SALES": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_TECH": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_OFFERS_UA": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_JOB_SUPEROFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_KADROMIERZ": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_LABOR_OFFICES": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_LEAVE_COMPENSATION_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_LOGIN": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_LOGOUT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_MATERNITY_LEAVE_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_MULTI_APPLYING": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_MY_SEND_JOB_REQUESTS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_OFFERS_ARCHIVE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_PARTNERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_PRESS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_PRIVACY_POLICY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_PRIVACY_SETTINGS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_QUESTIONNAIRE_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_RADAR_PAGE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_RECOMMENDED_OFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_REGISTER": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_REGULATIONS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_ROBOTA": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_SALARIES": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_SALARIES_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_SALARIES_CALCULATORS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_SAVED_OFFERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_SETTINGS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_SOFT_GARDEN": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_THE_NETWORK": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_THE_PROTOCOL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_THE_PROTOCOL_BLOG": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_TIKTOK": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_TIPS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_VAT_CALCULATOR": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.businessVariables.LINK_YOUTUBE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.mutations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].dehydratedAt": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryHash": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[]": {
+     "types": [
+      "bool",
+      "dict",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[].pn": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[].rd": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[].rop": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[].wp": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].queryKey[].wp[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data": {
+     "types": [
+      "dict",
+      "int",
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].absoluteUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].children": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].children[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].children[].absoluteUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].children[].label": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].children[].relativeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].label": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.breadcrumbs.items[].relativeUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.canonicalUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.faqSeoArticle": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.faqSeoArticle[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.faqSeoArticle[].answer": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.faqSeoArticle[].question": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffersTotalCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].aiSummary": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].appliedProducts": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].appliedProducts[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].commonOfferId": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].companyId": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].companyLogoUri": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].companyName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].companyProfileAbsoluteUri": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].desktopBannerUri": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].expirationDate": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].groupId": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].initialPublicated": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].isFranchise": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].isJobiconCompany": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].isOneClickApply": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].isOptionalCv": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].isRemoteWorkAllowed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].isSuperOffer": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].jobDescription": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].jobTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].lastPublicated": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].mobileBannerUri": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].appliedProducts": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].appliedProducts[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].coordinates": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].coordinates.latitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].coordinates.longitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].displayWorkplace": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].distanceInKilometers": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].isWholePoland": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].offerAbsoluteUri": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].offers[].partitionId": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].positionLevels": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].positionLevels[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].label": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].label.pracujPlText": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].label.primaryTargetSiteText": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].label.text": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].model": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].model.flag": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].model.number": {
+     "types": [
+      "int",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].model.paragraphs": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].primaryAttributes[].model.paragraphs[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].salaryDisplayText": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].searchEngineRelevancyScore": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].typesOfContract": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].typesOfContract[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].workModes[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].workSchedules": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.groupedOffers[].workSchedules[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.headerSubtitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.headerTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.jobCenterOffersCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.offersCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.offersTotalCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.seoArticle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.shouldBeIndexed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.dataUpdateCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.dataUpdatedAt": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].level": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].longForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].parentId": {
+     "types": [
+      "int",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.data[].shortForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.error": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.errorUpdateCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.errorUpdatedAt": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchFailureCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchFailureReason": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchMeta": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.fetchStatus": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.isInvalidated": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dehydratedState.queries[].state.status": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.languageCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.searchCriteria": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.searchCriteria.pn": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.searchCriteria.rd": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.searchCriteria.rop": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.searchCriteria.wp": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.searchCriteria.wp[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.user": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAbTestsCookieString": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgent": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements.gpc_ad": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements.gpc_analytic": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements.gpc_audience": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements.gpc_func": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements.gpc_social": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userAgreements.gpc_v": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userIdentifier": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userPermissions": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userPreferences": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userPreferences.locale": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userPreferences.palette": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.query": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.query.searchCriteria": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.ADS_ENABLED": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.API_ALABAMA_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.API_CLIENT_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.API_INTERNAL_TRANSLATE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.API_VERMONT_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.APP_NAME": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.APP_VERSION": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.CDN_PATH": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.CDN_ROOT_PATH": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.ENVIRONMENT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.GOOGLE_MAPS_API_KEY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.GTM_CONTAINER_ID": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.GTM_ENABLED": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_COOKIE_DOMAIN": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_GVL_PURPOSES_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_GVL_VENDOR_LIST_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_TCF_CMP_ID": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.NEXT_PUBLIC_TCF_CMP_VERSION": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.SENTRY_DSN": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.SENTRY_ENABLED": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.SENTRY_RELEASE_NAME": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.SENTRY_RELEASE_VERSION": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.runtimeConfig.SUPPORTED_BROWSERS": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.scriptLoader": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    }
+   }
+  }
+ }
+}

@@ -2,10 +2,12 @@ import json
 from datetime import datetime
 from enum import StrEnum
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any, Literal, Self
 from zoneinfo import ZoneInfo
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, model_validator
+
+from job_scout.normalize.text import is_verbatim_quote
 
 WARSAW_TZ = ZoneInfo("Europe/Warsaw")
 
@@ -38,6 +40,13 @@ class SalaryContract(StrEnum):
     UNKNOWN = "unknown"
 
 
+# ISO 4217 codes this project can meet on Polish/EU boards. A code outside this set is
+# rejected rather than guessed; extend the set when a board starts publishing another one.
+SUPPORTED_CURRENCIES: frozenset[str] = frozenset(
+    {"PLN", "EUR", "USD", "GBP", "CHF", "UAH", "CZK", "SEK", "NOK", "DKK", "HUF", "RON"}
+)
+
+
 class SalaryRange(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -48,6 +57,41 @@ class SalaryRange(BaseModel):
     gross_net: SalaryGrossNet = SalaryGrossNet.UNKNOWN
     contract: SalaryContract = SalaryContract.UNKNOWN
     raw: str
+
+    @model_validator(mode="after")
+    def _check_band(self) -> Self:
+        problems: list[str] = []
+        if self.min is None and self.max is None:
+            problems.append("at least one of min/max is required")
+        for name, value in (("min", self.min), ("max", self.max)):
+            if value is not None and not value > 0:
+                problems.append(f"{name} must be positive, got {value}")
+        if self.min is not None and self.max is not None and self.min > self.max:
+            problems.append(f"min ({self.min}) is greater than max ({self.max})")
+        if self.currency not in SUPPORTED_CURRENCIES:
+            problems.append(f"currency {self.currency!r} is not a supported ISO 4217 code")
+        if not self.raw.strip():
+            problems.append("raw must be non-empty")
+        if problems:
+            raise ValueError("; ".join(problems))
+        return self
+
+
+class Seniority(StrEnum):
+    INTERN = "intern"
+    JUNIOR = "junior"
+    MID = "mid"
+    SENIOR = "senior"
+    LEAD = "lead"
+
+
+class Evidence(BaseModel):
+    """A verbatim quote from the listing that supports one extracted field."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    field: Literal["seniority", "work_mode"]
+    quote: str = Field(min_length=1)
 
 
 class JobOffer(BaseModel):
@@ -75,6 +119,28 @@ class JobOffer(BaseModel):
     last_checked_at: str
     is_valid: bool = True
     also_on: list[str] = Field(default_factory=list)
+    seniority: Seniority | None = None
+    seniority_evidence: Evidence | None = None
+    seniority_confidence: Literal["quoted", "not_found"] = "not_found"
+    work_mode_evidence: Evidence | None = None
+
+    @model_validator(mode="after")
+    def _check_evidence_is_verbatim(self) -> Self:
+        source_text = f"{self.title}\n{self.description}"
+        bad: list[str] = []
+        for evidence in (self.seniority_evidence, self.work_mode_evidence):
+            if evidence is not None and not is_verbatim_quote(evidence.quote, source_text):
+                bad.append(f"{evidence.field}: {evidence.quote!r}")
+        if bad:
+            raise ValueError(
+                "evidence quotes are not substrings of the listing title/description: "
+                + "; ".join(bad)
+            )
+        if self.seniority is not None and self.seniority_evidence is None:
+            raise ValueError("seniority is set without a verbatim seniority_evidence quote")
+        if self.seniority_confidence == "quoted" and self.seniority is None:
+            raise ValueError("seniority_confidence is 'quoted' but seniority is empty")
+        return self
 
 
 class SourceFetchStatus(StrEnum):
@@ -108,6 +174,21 @@ class SearchQuery(BaseModel):
     verify_validity: bool = True
     limit: int = 50
     offset: int = 0
+    salary_basis: Literal["nominal", "uop_gross", "b2b_net"] = "nominal"
+
+
+class SalaryFilterReport(BaseModel):
+    """What the minimum-salary filter did, so excluded offers are never silent."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    min_pln_month: int
+    basis: Literal["nominal", "uop_gross", "b2b_net"]
+    kept: int = 0
+    excluded_no_salary: int = 0
+    excluded_non_pln: int = 0
+    excluded_basis_unavailable: int = 0
+    excluded_below_min: int = 0
 
 
 class SearchResult(BaseModel):
@@ -120,6 +201,11 @@ class SearchResult(BaseModel):
     offset: int
     returned: int
     jobs: list[JobOffer]
+    salary_filter: SalaryFilterReport | None = None
+    plan: dict[str, Any] | None = Field(
+        default=None,
+        description="The typed SearchPlan (JSON form) when search_jobs was called with return_plan=True.",
+    )
 
 
 class ValidityResult(BaseModel):

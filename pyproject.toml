@@ -26,6 +26,7 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "hypothesis>=6.170.15",
     "mypy<2",
     "pathspec==1.0.3",
     "pytest>=9.1.1",
@@ -33,9 +34,18 @@ dev = [
     "respx>=0.23.1",
     "ruff>=0.17.0",
 ]
+evals = [
+    "numpy>=2.5.4",
+]
+
+[tool.uv]
+# The skew monitors in evals/ need numpy; install them by default so `uv sync` covers CI.
+default-groups = ["dev", "evals"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
+# evals/ is a top-level package (not installed); make it importable from tests.
+pythonpath = ["."]
 asyncio_default_fixture_loop_scope = "function"
 markers = [
     "live: marks tests as live internet smoke tests (deselect with '-m \"not live\"')",
@@ -44,7 +54,7 @@ markers = [
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-exclude = [".venv", "scratch"]
+exclude = [".venv", "scratch", "models"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]

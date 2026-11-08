@@ -139,50 +139,40 @@ class AdapterRegistry:
                 ),
             )
 
-    async def execute_search(
-        self,
-        query: SearchQuery,
-        enabled_overrides: dict[str, bool] | None = None,
-    ) -> tuple[list[JobOffer], list[SourceReport]]:
-        target_ids = query.sources
-        if target_ids is None:
-            target_ids = [
-                s_id
-                for s_id, a in self._adapters.items()
-                if (enabled_overrides.get(s_id) if enabled_overrides and s_id in enabled_overrides else a.enabled_by_default)
-            ]
+    def enabled_source_ids(self, enabled_overrides: dict[str, bool] | None = None) -> list[str]:
+        ids: list[str] = []
+        for s_id, adapter in self._adapters.items():
+            enabled = adapter.enabled_by_default
+            if enabled_overrides and s_id in enabled_overrides:
+                enabled = enabled_overrides[s_id]
+            if enabled:
+                ids.append(s_id)
+        return ids
 
-        tasks = []
-        reports: list[SourceReport] = []
-        for s_id in target_ids:
-            adapter = self._adapters.get(s_id)
-            if not adapter:
-                reports.append(
-                    SourceReport(
-                        id=s_id,
-                        status=SourceFetchStatus.ERROR,
-                        count=0,
-                        error=f"Source '{s_id}' not found in registry",
-                    )
-                )
-                continue
-            tasks.append(self._search_source(adapter, query))
-
-        if not tasks:
-            return ([], reports)
-
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-
-        all_offers: list[JobOffer] = []
-        for res in results:
-            if isinstance(res, BaseException):
-                logger.error("Unexpected error in search runner: %s", res)
-                continue
-            offers, report = res
-            reports.append(report)
-            all_offers.extend(offers)
-
-        return (all_offers, reports)
+    async def run_listing(
+        self, source_id: str, query: SearchQuery
+    ) -> tuple[list[JobOffer], SourceReport]:
+        """Run one listing task. Never raises: every failure becomes a SourceReport."""
+        adapter = self._adapters.get(source_id)
+        if adapter is None:
+            return (
+                [],
+                SourceReport(
+                    id=source_id,
+                    status=SourceFetchStatus.ERROR,
+                    count=0,
+                    error=f"Source '{source_id}' not found in registry",
+                ),
+            )
+        try:
+            return await self._search_source(adapter, query)
+        except Exception as e:  # _search_source handles adapter errors; this is a backstop
+            logger.error("Unexpected error in search runner for %s: %s", source_id, e)
+            self._last_error[source_id] = str(e)
+            return (
+                [],
+                SourceReport(id=source_id, status=SourceFetchStatus.ERROR, count=0, error=str(e)),
+            )
 
     async def check_validity(self, urls: list[str]) -> list[ValidityResult]:
         results: list[ValidityResult] = []

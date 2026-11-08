@@ -1,0 +1,3191 @@
+{
+ "board": "bulldogjob",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "html:listing": {
+   "samples": 2,
+   "min_links": 52,
+   "max_links": 52
+  },
+  "jsonld:detail": {
+   "samples": 3,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.@context": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.@id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.applicantLocationRequirements[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.applicantLocationRequirements[].@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.applicantLocationRequirements[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.benefits": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.datePosted": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.experienceRequirements": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.experienceRequirements.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.experienceRequirements.monthsOfExperience": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.@id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.logo": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.jobLocationType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.jobLocation[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].address": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].address.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].address.addressCountry": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].address.addressLocality": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].address.addressRegion": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation[].address.streetAdress": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.skills": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.validThrough": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    }
+   }
+  },
+  "next_data:detail": {
+   "samples": 3,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.appGip": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.buildId": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.defaultLocale": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.domainLocales": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.domainLocales[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.domainLocales[].defaultLocale": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.domainLocales[].domain": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.gssp": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.isExperimentalCompile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.isFallback": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.locale": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.locales": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.locales[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.page": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.__N_SSP": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.__lang": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.activeOffersCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.address": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits[].category": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits[].localizedName": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.benefits[].owner": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.coverPhoto": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.currentLayout": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.employees": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.environment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.environment.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.environment.paidVacations": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.environment.remotePossible": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.history": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.jobCover": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.logo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.logo.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.logo.url(<args>)": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.managed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.published": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Company:<id>.themeColor": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Consent:<id>": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Consent:<id>.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Consent:<id>.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Consent:<id>.required": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Consent:<id>.text": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.applyViaProfile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.b2bSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits[].category": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits[].localizedName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.benefits[].owner": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company.__ref": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.consents": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.consents[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.consents[].__ref": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.contractB2b": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.contractEmployment": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.contractOther": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.details": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.employmentSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.endsAt": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment.paidVacations": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment.remotePossible": {
+     "types": [
+      "int",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.hiddenBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.highlight": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.bdd": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.codeMetrics": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.codeReview": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.knowledgeDatabase": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.pairProgramming": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.staticCodeAnalysis": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.styleGuide": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.tdd": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeCode.versionControlDescription": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.architecturalDecisions": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.canSwitchProjects": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.methodology": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.projectSoftware": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.teamDesign": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.teamDev": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.teamPm": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.teamQa": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeManage.techDecisions": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.automatedTesting": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.ci": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.integration": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.manualTesting": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.performance": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.security": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.system": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.howWeTest.unit": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.internalApplication": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locale": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].address": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].location": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].location.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].location.cityEn": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].location.cityPl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].location.countryEn": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locations[].location.countryPl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.mainTechnology": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.matchingUserBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.minExperienceInYears": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.offer": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.otherSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.position": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.publishedAt": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.recruitmentProcess": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.redirectTo": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.remote": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.requirements": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.roles": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.roles[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.showSalary": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.state": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.technologyTags": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.technologyTags[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.additionalMonitor": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.container": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.freeSelection": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.headphones": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.laptop": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.linux": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.osx": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.pc": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.phone": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.tools.windows": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.topBanner": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.workFrom": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.workFrom[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.workModes[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.job(<args>)": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.job(<args>).__ref": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>)": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).breadcrumbJsonLd": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).canonicalUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).header": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).hreflangEnUrl": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).hreflangPlUrl": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).imageUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).jsonLd": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).noindex": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).subheader": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.country": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.applyViaProfile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.b2bSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.benefits": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.benefits[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.data.job.benefits[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.data.job.benefits[].category": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.data.job.benefits[].localizedName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.data.job.benefits[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.data.job.benefits[].owner": {
+     "types": [
+      "bool"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.data.job.company": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.activeOffersCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.address": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits[].category": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits[].localizedName": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.benefits[].owner": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.coverPhoto": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.currentLayout": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.employees": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.environment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.environment.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.environment.paidVacations": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.environment.remotePossible": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.history": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.jobCover": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.logo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.logo.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.logo.url": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.managed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.published": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.company.themeColor": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.consents": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.consents[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.consents[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.consents[].id": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.consents[].required": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.consents[].text": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.contractB2b": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.contractEmployment": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.contractOther": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.details": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.employmentSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.endsAt": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.environment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.environment.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.environment.paidVacations": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.environment.remotePossible": {
+     "types": [
+      "int",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.hiddenBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.highlight": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.bdd": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.codeMetrics": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.codeReview": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.knowledgeDatabase": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.pairProgramming": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.staticCodeAnalysis": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.styleGuide": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.tdd": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeCode.versionControlDescription": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.architecturalDecisions": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.canSwitchProjects": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.methodology": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.projectSoftware": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.teamDesign": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.teamDev": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.teamPm": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.teamQa": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeManage.techDecisions": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.automatedTesting": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.ci": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.integration": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.manualTesting": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.performance": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.security": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.system": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.howWeTest.unit": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.internalApplication": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locale": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].address": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].location": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].location.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].location.cityEn": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].location.cityPl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].location.countryEn": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.locations[].location.countryPl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.mainTechnology": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.matchingUserBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.minExperienceInYears": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.offer": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.otherSalary": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.position": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.publishedAt": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.recruitmentProcess": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.redirectTo": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.remote": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.requirements": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.roles": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.roles[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.showSalary": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.state": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.technologyTags": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.technologyTags[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.tools": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.additionalMonitor": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.container": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.freeSelection": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.headphones": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.laptop": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.linux": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.osx": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.pc": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.phone": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.tools.windows": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.topBanner": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.workFrom": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.workFrom[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.data.job.workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.data.job.workModes[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.defaultLocale": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.breadcrumbJsonLd": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.canonicalUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.header": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.hreflangEnUrl": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.hreflangPlUrl": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.imageUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.jsonLd": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.noindex": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.subheader": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.metaData.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.query": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.query.slug": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.scriptLoader": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    }
+   }
+  },
+  "next_data:listing": {
+   "samples": 2,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.appGip": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.buildId": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.defaultLocale": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.domainLocales": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.domainLocales[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.domainLocales[].defaultLocale": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.domainLocales[].domain": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.gssp": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.isExperimentalCompile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.isFallback": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.locale": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.locales": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.locales[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.page": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.__N_SSP": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.__lang": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.city": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company.logo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company.logo.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company.logo.url(<args>)": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.company.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.contractB2b": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.contractEmployment": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.contractOther": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.denominatedSalaryLong": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.denominatedSalaryLong.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.denominatedSalaryLong.currency": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.denominatedSalaryLong.hidden": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.denominatedSalaryLong.money": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.environment.remotePossible": {
+     "types": [
+      "int",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.hiddenBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.highlight": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.locale": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.matchingUserBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.position": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.redirectTo": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.remote": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.showSalary": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.technologyTags": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.Job:<id>.technologyTags[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.jobsLocations(<args>)": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.jobsLocations(<args>)[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.me": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>)": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).breadcrumbJsonLd": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).canonicalUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).description": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).header": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).hreflangEnUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).hreflangPlUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).imageUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).jsonLd": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).noindex": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).subheader": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.metadata(<args>).title": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.searchJobs(<args>)": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.searchJobs(<args>).__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.searchJobs(<args>).nodes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.searchJobs(<args>).nodes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.searchJobs(<args>).nodes[].__ref": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.__APOLLO_STATE__.ROOT_QUERY.searchJobs(<args>).totalCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.country": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobsLocations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobsLocations[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].city": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].company": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].company.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].company.logo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].company.logo.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].company.logo.url": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].company.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].contractB2b": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].contractEmployment": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].contractOther": {
+     "types": [
+      "bool",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].denominatedSalaryLong": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].denominatedSalaryLong.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].denominatedSalaryLong.currency": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].denominatedSalaryLong.hidden": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].denominatedSalaryLong.money": {
+     "types": [
+      "null",
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].environment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].environment.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].environment.remotePossible": {
+     "types": [
+      "int",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].hiddenBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].highlight": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].id": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].locale": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].matchingUserBrackets": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].position": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].redirectTo": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].remote": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].showSalary": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].technologyTags": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.jobs[].technologyTags[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.__typename": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.breadcrumbJsonLd": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.canonicalUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.header": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.hreflangEnUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.hreflangPlUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.imageUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.jsonLd": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.noindex": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.subheader": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.metaData.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.session": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.filters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.filters.city": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.filters.city[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.filters.city[].label": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.filters.city[].value": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.order": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.page": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.slugState.perPage": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.totalCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.query": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.query.slug": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.query.slug[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.scriptLoader": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    }
+   }
+  }
+ }
+}

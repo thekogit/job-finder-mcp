@@ -1,0 +1,2832 @@
+{
+ "board": "theprotocol",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "html:listing": {
+   "samples": 2,
+   "min_links": 50,
+   "max_links": 50
+  },
+  "jsonld:detail": {
+   "samples": 3,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.@context": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.@context": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.baseSalary.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.baseSalary.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.baseSalary.maxValue": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.baseSalary.minValue": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.datePosted": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.employmentType": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.employmentType[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.image": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.@context": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.addressCountry": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.addressLocality": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.addressRegion": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.streetAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.geo": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.geo.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.geo.latitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.geo.longitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 1
+    },
+    "$.responsibilities": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.validThrough": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    }
+   }
+  },
+  "next_data:detail": {
+   "samples": 3,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.assetPrefix": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.buildId": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.dynamicIds": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.dynamicIds[]": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.gssp": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.isExperimentalCompile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.isFallback": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.page": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.__N_SSP": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_AB_TEST_COOKIENAME": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_AUTH_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_BASE_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_CLIENT_TIMEOUT": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_COLLECTOR_ENDPOINT": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_CSS_STATICS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_DIGITAL_SERVICES_ACT_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_HOME_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_PRIVACY_COOKIES_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_PRIVACY_POLICY_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_RECAPTCHA_V2_KEY": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_RECAPTCHA_V3_KEY": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_REGULATIONS_DATE": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_REGULATIONS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_ROUTE_PATTERN": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_SM_CARD_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_STATICS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_UPDATED_PRIVACY_POLICY_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_UPDATED_REGULATIONS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_WEB_SURVEY_ENABLED": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.isDarkMode": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.isLoginRibbonClosed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.isMobileView": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.isOpenedCookiePolicy": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.isSupportedBrowser": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.nonceValue": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.addons": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.addons.isWholePoland": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.addons.searchableLocations": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.addons.searchableRegions": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.applyFormUrlSegment": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.applyingType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.contactPhone": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.isExternalUrl": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.processingOfPersonalDataClause": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.processingOfPersonalDataClause.longText": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.processingOfPersonalDataClause.shortText": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.referenceNumber": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.strefa": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.applying.strefa.futureRecruitmentAgreement": {
+     "types": [
+      "null"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employer": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employer.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employer.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.detailedWorkModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.detailedWorkModes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.detailedWorkModes[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.detailedWorkModes[].description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.detailedWorkModes[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.isSupportingUkraine": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.positionLevelIds": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.positionLevelIds[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.salaryDetails": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.salaryDetails.paragraphs": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.salaryDetails.salaryComponents": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.salaryDetails.salaryComponents[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.currencyCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.from": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.kindCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.timeUnit": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.timeUnit.id": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.timeUnit.longForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.timeUnit.shortForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.timeUnitId": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.typesOfContracts[].salary.to": {
+     "types": [
+      "int"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.employment.workScheduleIds": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.employment.workScheduleIds[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.specializations": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.specializations[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.specializations[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.specializations[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.title": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.title.value": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].address": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].city": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].coordinates": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].coordinates.latitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].coordinates.longitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].country": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].district": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].location": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].region": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.attributes.workplaces[].regionId": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.badges": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.badges.immediateEmployment": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.badges.isQuickApply": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.badges.new": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.coverImageUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.groupId": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.hasExternalEmailForNotification": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonPrimaryAttributes": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].header": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].id": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].id.number": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].id.type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].model": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].model.bullets": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].model.bullets[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].model.customItems": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.customItems[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.customItems[].icon": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.customItems[].icon.rasterUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.customItems[].icon.vectorUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.customItems[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.dictionaryName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].icon": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].icon.rasterUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].icon.vectorUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.items[].primaryTargetSiteName": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].model.paragraphs": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].model.paragraphs[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].number": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].sectionType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections": {
+     "types": [
+      "list",
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].header": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].id": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].id.number": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].id.type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.bullets": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.bullets[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.customItems": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.customItems[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.customItems[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.dictionaryName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].grubberId": {
+     "types": [
+      "null"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].mediaType": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].pracujPlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].primaryTargetSiteName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].thumbnailUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.items[].url": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.modelType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.paragraphs": {
+     "types": [
+      "list"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].model.paragraphs[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].number": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].sectionType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].subSections": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].subSections[].title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.jsonSections[].title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.language": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.logo": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.logo.uri": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.offerUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.offerUrlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[].current": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[].id": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[].url": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[].workplaces": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[].workplaces[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.partitions[].workplaces[].location": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.active": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.archivizationDateUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.dateOfInitialPublicationUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.isActive": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.isNew": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.lastPublishedUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.publicationDetails.new": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.style": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.style.backgroundImages": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.style.backgroundImages[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.style.backgroundImages[].url": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.technologies": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.technologies.expected": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.technologies.expected[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.technologies.expected[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer.technologies.optional": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.technologies.optional[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.technologies.optional[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.offer.technologies.os": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.textSections": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.textSections[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.textSections[].elements": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.textSections[].elements[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.textSections[].plainText": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offer.textSections[].type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.offerUrlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.summaryAi": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.summaryAi.groupId": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.summaryAi.summaryEN": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.summaryAi.summaryPL": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.props.pageProps.userData": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    },
+    "$.query": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.query.offerUrlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.query.sub": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.query.viewQueryOnServer": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.scriptLoader": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    }
+   }
+  },
+  "next_data:listing": {
+   "samples": 2,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.assetPrefix": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.buildId": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.dynamicIds": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.dynamicIds[]": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.gssp": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.isExperimentalCompile": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.isFallback": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.page": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.__N_SSP": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.areFiltersVisible": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters[].collectionName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters[].entries": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters[].entries[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters[].entries[].count": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.counters.counters[].entries[].key": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.contracts": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.contracts[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.contracts[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.contracts[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.contracts[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.locations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.locations[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.locations[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.locations[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.popularTechnologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.popularTechnologies[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.popularTechnologies[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.popularTechnologies[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.popularTechnologies[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.positionLevels": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.positionLevels[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.positionLevels[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.positionLevels[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.positionLevels[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.regions": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.regions[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.regions[].counterKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.regions[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.regions[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.specializations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.specializations[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.specializations[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.specializations[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.specializations[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.support": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.support[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.support[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.support[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.technologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.technologies[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.technologies[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.technologies[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.technologies[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.workModes[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.workModes[].code": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.workModes[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.dictionary.workModes[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_AB_TEST_COOKIENAME": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_AUTH_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_BASE_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_CLIENT_TIMEOUT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_COLLECTOR_ENDPOINT": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_CSS_STATICS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_DIGITAL_SERVICES_ACT_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_GATEWAY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_HOME_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_PRIVACY_COOKIES_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_PRIVACY_POLICY_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_RECAPTCHA_V2_KEY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_RECAPTCHA_V3_KEY": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_REGULATIONS_DATE": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_REGULATIONS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_ROUTE_PATTERN": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_SM_CARD_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_STATICS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_UPDATED_PRIVACY_POLICY_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_UPDATED_REGULATIONS_URL": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.environments.NEXT_PUBLIC_WEB_SURVEY_ENABLED": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.context": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.contracts": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.keywords": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.locations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.locations[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.positionLevels": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.regions": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.salary": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.specializations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.support": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.technologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.technologiesExcluded": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.technologiesNiceToHave": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.filters.workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isDarkMode": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isHappinessFeedbackFilled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isLoginRibbonClosed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isMobileView": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isOfferSelectedSSR": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isOpenedCookiePolicy": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isRadarPromptClosed": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isRangeAddonEnabled": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.isSupportedBrowser": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.nonceValue": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offer": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.cities": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.cities[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.cities[].displayName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.cities[].urlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.excludedTechnologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.expectedTechnologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.keywords": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.niceToHaveTechnologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.regionsOfWorld": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.specializationsCodes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.filters.technologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offersCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].aboutProject": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].aboutProject[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].addons": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].addons.isWholePoland": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].addons.searchableLocations": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].addons.searchableRegions": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].alpha": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges.immediateEmployment": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges.isFromExternalLocations": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges.isQuickApply": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges.isSupportingUkraine": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges.lastCall": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].badges.new": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].employer": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].employerId": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].groupId": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].id": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].immediateEmployment": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].isFromExternalLocations": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].isSupportingUkraine": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].language": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].lastCall": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].logoUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].new": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].offerUrlName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].positionLevels": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].positionLevels[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].positionLevels[].value": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].publicationDateUtc": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].salary": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].salary.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].salary.timeUnit": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].salary.timeUnit.longForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].salary.timeUnit.shortForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].salary.to": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].technologies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].technologies[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].title": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary": {
+     "types": [
+      "dict",
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.currencySymbol": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.from": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.kindName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.timeUnit": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.timeUnit.longForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.timeUnit.shortForm": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.timeUnitId": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].typesOfContracts[].salary.to": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workModes": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workModes[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workplace": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workplace[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workplace[].city": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workplace[].location": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.offers[].workplace[].region": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.orderBy": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.orderBy.direction": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.orderBy.field": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.page": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.page.count": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.page.number": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.offersResponse.page.size": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.parameters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.parameters.orderby.field": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.parameters.pageNumber": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.parameters.pageSize": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.queryParameters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.queryParameters.pageNumber": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.props.pageProps.seoText": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.seoText[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.sortType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.summaryAi": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.props.pageProps.userData": {
+     "types": [
+      "null"
+     ],
+     "presence": 2
+    },
+    "$.query": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.query.filters": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.query.sub": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.scriptLoader": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    }
+   }
+  }
+ }
+}

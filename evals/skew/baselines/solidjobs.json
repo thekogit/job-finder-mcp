@@ -1,0 +1,1139 @@
+{
+ "board": "solidjobs",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "api:listing": {
+   "samples": 2,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.companies": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.companies[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.companies[].companyName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.companies[].offerCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.faq": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.faq[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.faq[].answer": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.faq[].question": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.isMain": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.jobTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.metaDescription": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.metaTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.offers[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.offers[].billingProfileKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].companyAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].companyCity": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].companyLogoUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].companyName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].division": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.offers[].isPremium": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.offers[].isSalaryNormalized": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.offers[].jobOfferKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].jobOfferShortUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].jobOfferUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].jobTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].mainCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].minimalExperienceInField": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.offers[].normalizedSalaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.offers[].normalizedSalaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].normalizedSalaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].normalizedSalaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.offers[].normalizedSalaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].normalizedSalaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.offers[].officeLatitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.offers[].officeLongitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.offers[].remotePossible": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredLanguages": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredLanguages[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredLanguages[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredLanguages[].skillLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredLanguages[].skillType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredSkills": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredSkills[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredSkills[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredSkills[].skillLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].requiredSkills[].skillType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].salaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.offers[].salaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].salaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].salaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.offers[].salaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].salaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.offers[].subCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].validFrom": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].validTo": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.offers[].workload": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.positionName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.searchFilters": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.searchFilters.city": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.searchFilters.isRemoteOnly": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.slug": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.statisticsScope": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.statisticsScope.key": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.statisticsScope.kind": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.stats": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.stats.activeOffers": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.b2BSalary": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.stats.b2BSalary.average": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.stats.b2BSalary.median": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.stats.b2BSalary.offerCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.experienceBreakdown": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.stats.experienceBreakdown.intern": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.experienceBreakdown.junior": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.experienceBreakdown.regular": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.experienceBreakdown.senior": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.maxSalary": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.stats.newOffersThisMonth": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.permanentSalary": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.stats.permanentSalary.average": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.stats.permanentSalary.median": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.stats.permanentSalary.offerCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.stats.remotePercentage": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].billingProfileKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].companyAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].companyCity": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].companyLogoUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].companyName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].division": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].isPremium": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].isSalaryNormalized": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].jobOfferKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].jobOfferShortUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].jobOfferUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].jobTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].mainCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].minimalExperienceInField": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].normalizedSalaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].normalizedSalaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].normalizedSalaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].normalizedSalaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].normalizedSalaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].normalizedSalaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].officeLatitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].officeLongitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].remotePossible": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredLanguages": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredLanguages[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredLanguages[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredLanguages[].skillLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredLanguages[].skillType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredSkills": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredSkills[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredSkills[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredSkills[].skillLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].requiredSkills[].skillType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].salaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].salaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].salaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].salaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].salaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].salaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].subCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].validFrom": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].validTo": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topHighestSalaryOffers[].workload": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].billingProfileKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].companyAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].companyCity": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].companyLogoUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].companyName": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].division": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].experienceLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].id": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].isPremium": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].isSalaryNormalized": {
+     "types": [
+      "bool"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].jobOfferKey": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].jobOfferShortUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].jobOfferUrl": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].jobTitle": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].mainCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].minimalExperienceInField": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].normalizedSalaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].normalizedSalaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].normalizedSalaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].normalizedSalaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].normalizedSalaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].normalizedSalaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].officeLatitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].officeLongitude": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].remotePossible": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredLanguages": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredLanguages[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredLanguages[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredLanguages[].skillLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredLanguages[].skillType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredSkills": {
+     "types": [
+      "list"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredSkills[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredSkills[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredSkills[].skillLevel": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].requiredSkills[].skillType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].salaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].salaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].salaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].salaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].salaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].salaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].secondarySalaryRange": {
+     "types": [
+      "dict"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].secondarySalaryRange.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].secondarySalaryRange.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].secondarySalaryRange.lowerBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].secondarySalaryRange.salaryPeriod": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].secondarySalaryRange.upperBound": {
+     "types": [
+      "float"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].subCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].validFrom": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].validTo": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.topMostPopularOffers[].workload": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.totalOfferCount": {
+     "types": [
+      "int"
+     ],
+     "presence": 2
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "board": "linkedin",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "html:listing": {
+   "samples": 2,
+   "min_links": 10,
+   "max_links": 10
+  }
+ }
+}
