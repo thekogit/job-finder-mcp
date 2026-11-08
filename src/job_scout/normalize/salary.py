@@ -1,5 +1,6 @@
 import re
 
+from job_scout.generation.salary import try_salary_range
 from job_scout.models import SalaryContract, SalaryGrossNet, SalaryPeriod, SalaryRange
 
 
@@ -134,7 +135,7 @@ def parse_single_salary_clause(raw_text: str) -> SalaryRange | None:
         else:
             return None
 
-    return SalaryRange(
+    return try_salary_range(
         min=min_val,
         max=max_val,
         currency=currency,

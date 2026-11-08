@@ -3,6 +3,7 @@ import logging
 from typing import Any
 
 from job_scout.adapters.base import BaseAdapter
+from job_scout.generation.salary import try_salary_range
 from job_scout.http import get_http_client
 from job_scout.models import (
     JobOffer,
@@ -80,17 +81,16 @@ class SolidJobsAdapter(BaseAdapter):
                 contract = SalaryContract.UOP
 
             raw_str = f"{min_v} - {max_v} {cur} / {p_str} ({emp_str})"
-            salary = [
-                SalaryRange(
-                    min=min_v,
-                    max=max_v,
-                    currency=cur,
-                    period=period,
-                    gross_net=SalaryGrossNet.UNKNOWN,
-                    contract=contract,
-                    raw=raw_str,
-                )
-            ]
+            band = try_salary_range(
+                min=min_v,
+                max=max_v,
+                currency=cur,
+                period=period,
+                gross_net=SalaryGrossNet.UNKNOWN,
+                contract=contract,
+                raw=raw_str,
+            )
+            salary = [band] if band is not None else None
 
         # Work mode
         work_modes: list[WorkMode] = [WorkMode.ONSITE]

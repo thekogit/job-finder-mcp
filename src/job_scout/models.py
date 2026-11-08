@@ -2,10 +2,10 @@ import json
 from datetime import datetime
 from enum import StrEnum
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any, Literal, Self
 from zoneinfo import ZoneInfo
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 WARSAW_TZ = ZoneInfo("Europe/Warsaw")
 
@@ -38,6 +38,13 @@ class SalaryContract(StrEnum):
     UNKNOWN = "unknown"
 
 
+# ISO 4217 codes this project can meet on Polish/EU boards. A code outside this set is
+# rejected rather than guessed; extend the set when a board starts publishing another one.
+SUPPORTED_CURRENCIES: frozenset[str] = frozenset(
+    {"PLN", "EUR", "USD", "GBP", "CHF", "UAH", "CZK", "SEK", "NOK", "DKK", "HUF", "RON"}
+)
+
+
 class SalaryRange(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -48,6 +55,24 @@ class SalaryRange(BaseModel):
     gross_net: SalaryGrossNet = SalaryGrossNet.UNKNOWN
     contract: SalaryContract = SalaryContract.UNKNOWN
     raw: str
+
+    @model_validator(mode="after")
+    def _check_band(self) -> Self:
+        problems: list[str] = []
+        if self.min is None and self.max is None:
+            problems.append("at least one of min/max is required")
+        for name, value in (("min", self.min), ("max", self.max)):
+            if value is not None and not value > 0:
+                problems.append(f"{name} must be positive, got {value}")
+        if self.min is not None and self.max is not None and self.min > self.max:
+            problems.append(f"min ({self.min}) is greater than max ({self.max})")
+        if self.currency not in SUPPORTED_CURRENCIES:
+            problems.append(f"currency {self.currency!r} is not a supported ISO 4217 code")
+        if not self.raw.strip():
+            problems.append("raw must be non-empty")
+        if problems:
+            raise ValueError("; ".join(problems))
+        return self
 
 
 class JobOffer(BaseModel):

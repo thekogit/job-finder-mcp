@@ -5,6 +5,7 @@ from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 from job_scout.adapters.base import BaseAdapter
 from job_scout.extract.jsonld import extract_job_posting_jsonld
+from job_scout.generation.salary import try_salary_range
 from job_scout.http import get_http_client
 from job_scout.models import (
     JobOffer,
@@ -90,29 +91,27 @@ class NoFluffJobsAdapter(BaseAdapter):
                 elif "year" in unit_str:
                     period = SalaryPeriod.YEAR
 
-                salary = [
-                    SalaryRange(
-                        min=min_v,
-                        max=max_v,
-                        currency=cur,
-                        period=period,
-                        gross_net=SalaryGrossNet.UNKNOWN,
-                        contract=SalaryContract.UNKNOWN,
-                        raw=f"{min_v} - {max_v} {cur} / {unit_str}",
-                    )
-                ]
+                band = try_salary_range(
+                    min=min_v,
+                    max=max_v,
+                    currency=cur,
+                    period=period,
+                    gross_net=SalaryGrossNet.UNKNOWN,
+                    contract=SalaryContract.UNKNOWN,
+                    raw=f"{min_v} - {max_v} {cur} / {unit_str}",
+                )
+                salary = [band] if band is not None else None
             elif isinstance(val_obj, (int, float)):
-                salary = [
-                    SalaryRange(
-                        min=val_obj,
-                        max=val_obj,
-                        currency=cur,
-                        period=SalaryPeriod.MONTH,
-                        gross_net=SalaryGrossNet.UNKNOWN,
-                        contract=SalaryContract.UNKNOWN,
-                        raw=f"{val_obj} {cur} / month",
-                    )
-                ]
+                band = try_salary_range(
+                    min=val_obj,
+                    max=val_obj,
+                    currency=cur,
+                    period=SalaryPeriod.MONTH,
+                    gross_net=SalaryGrossNet.UNKNOWN,
+                    contract=SalaryContract.UNKNOWN,
+                    raw=f"{val_obj} {cur} / month",
+                )
+                salary = [band] if band is not None else None
 
         loc_type = jp.get("jobLocationType")
         emp_type = jp.get("employmentType")
