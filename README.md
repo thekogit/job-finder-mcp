@@ -38,7 +38,7 @@ Searches fresh, verified job offers in Warsaw or remote open to Poland.
   - `max_age_days` (integer, 1-60, default `14`): Filter postings older than N days.
   - `work_modes` (list of strings, optional): `["onsite", "hybrid", "remote"]`.
   - `salary_min_pln_month` (integer, optional): Minimum monthly salary in PLN. **Behaviour change (2026-11-08):** offers without a salary, and offers whose salary is only in another currency, are now *excluded* and counted in `salary_filter` (previously they passed silently, and 5 000 EUR passed as 5 000 PLN).
-  - `salary_basis` (`"nominal"` | `"uop_gross"` | `"b2b_net"`, default `"nominal"`): What the minimum is compared with. `nominal` uses the period-converted PLN amount whatever the contract, so B2B net and UoP gross share one axis. `uop_gross` keeps only UoP bands stated as gross; `b2b_net` keeps only B2B bands stated as net of VAT.
+  - `salary_basis` (`"nominal"` | `"uop_gross"` | `"b2b_net"`, default `"nominal"`): What the minimum is compared with. `nominal` uses the period-converted PLN amount whatever the contract, so B2B net and UoP gross share one axis. `uop_gross` keeps only UoP bands, compared as gross (a band stated as net is converted to gross with the 2026 tax rules); `b2b_net` keeps only B2B bands stated as net of VAT.
   - `only_with_salary` (boolean, default `false`): Filter only postings with published compensation.
   - `include_metro` (boolean, default `false`): Include Warsaw suburbs (Piaseczno, Pruszków, etc.).
   - `verify_validity` (boolean, default `true`): Concurrently check HTTP 200 and expiration markers.
@@ -138,7 +138,19 @@ agy mcp list
 
 `SalaryRange` rejects bands with `min > max`, non-positive amounts, an unsupported ISO 4217 code or an empty `raw`. A board band that fails is dropped and logged instead of crashing the parse. `NormalizedSalary` (`src/job_scout/generation/salary.py`) holds each band per hour, month and year, and its `@model_validator` re-checks that they agree: hourly × 168 = monthly, monthly × 12 = annual, and the listing's own period survives the round trip within 0.01. The 8 h × 21 days factor is a calculation convention, documented in `salary_constants.py`, not a statutory value.
 
-Comparison bases are only filled when the listing says enough: `monthly_gross_pln_equivalent` for UoP gross PLN, `monthly_net_invoice_pln` for B2B net PLN. There is no FX conversion and no guess at the B2B tax form. UoP gross-to-net is **not implemented**: the 2026 ZUS/PIT parameters it needs have not yet been confirmed against primary sources (DEVIATIONS.md, DEV-004).
+Comparison bases are only filled when the listing says enough: for UoP PLN bands stated as gross or net, `monthly_gross_pln_equivalent` and `uop_monthly_net_estimate`; for B2B net PLN, `monthly_net_invoice_pln`. There is no FX conversion and no guess at the B2B tax form.
+
+UoP gross ↔ net (`src/job_scout/generation/uop.py`) uses the 2026 employee-side parameters in `salary_constants.py`, each read in the primary act on 2026-11-08 and cited there with its article and official PDF:
+
+| Parameter | 2026 | Source |
+|---|---|---|
+| Pension / disability / sickness, employee | 9.76% / 1.5% / 2.45% | social insurance act (u.s.u.s.) art. 16 ust. 1, 1b, 2 and art. 22 ust. 1; t.j. [Dz.U. 2026 poz. 199](https://api.sejm.gov.pl/eli/acts/DU/2026/199/text.pdf) |
+| Annual cap on the pension and disability base | 282 600 zł | [M.P. 2025 poz. 1206](https://api.sejm.gov.pl/eli/acts/MP/2025/1206/text.pdf) (u.s.u.s. art. 19) |
+| Health contribution | 9% of gross minus employee social contributions, no cap; not deductible from PIT | health-care act art. 79 ust. 1, art. 81 ust. 1, 5, 6; t.j. [Dz.U. 2025 poz. 1461](https://api.sejm.gov.pl/eli/acts/DU/2025/1461/text.pdf); PIT act art. 27b repealed |
+| Employee costs | 3 000 zł/year (3 600 zł commuting) | PIT act art. 22 ust. 2 pkt 1, 3; t.j. [Dz.U. 2026 poz. 592](https://api.sejm.gov.pl/eli/acts/DU/2026/592/text.pdf) |
+| PIT scale | to 120 000 zł: 12% minus 3 600 zł; above: 10 800 zł + 32% of the excess | PIT act art. 27 ust. 1; social contributions deducted per art. 26 ust. 1 pkt 2 lit. b |
+
+The result is an estimate: one employer, the same gross every month, the tax settled annually and averaged over 12 months. It does not model PPK, the under-26 or other reliefs, author's costs, joint filing, rounding to full złoty, or the art. 83 health cap (which only binds at low wages). A single payslip differs from this average, because advances are monthly and the 32% bracket and the contribution cap only bite once the yearly totals cross them. A B2B net estimate is still not implemented, because a listing never states the B2B tax form or ZUS tier.
 
 ## Grounded extraction
 

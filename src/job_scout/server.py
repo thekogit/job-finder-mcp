@@ -94,7 +94,8 @@ async def search_jobs(
             salary_filter) when this is set.
         salary_basis: What salary_min_pln_month is compared with. "nominal" (default):
             the period-converted PLN amount, whatever the contract (B2B net and UoP gross
-            on one axis). "uop_gross": only UoP bands stated as gross. "b2b_net": only B2B
+            on one axis). "uop_gross": only UoP bands, as gross (net bands
+            converted with the 2026 tax rules). "b2b_net": only B2B
             bands stated as net of VAT.
         only_with_salary: If True, returns only postings that display published compensation.
         include_metro: If True, includes Warsaw metropolitan suburbs (e.g. Piaseczno, Pruszków).

@@ -4,7 +4,10 @@ All arithmetic is plain Python. Nothing here calls an LLM, converts currencies o
 a contract type. A value is only placed on a comparison basis when the listing says enough
 to put it there:
 
-* ``monthly_gross_pln_equivalent``: UoP, stated as gross ("brutto"), in PLN.
+* ``monthly_gross_pln_equivalent``: UoP in PLN, stated as gross ("brutto"), or stated as
+  net and converted back to gross with the sourced tax parameters (``uop.py``).
+* ``uop_monthly_net_estimate``: the same UoP bands as take-home pay (net stated, or gross
+  converted). An estimate under the assumptions listed in ``uop.py``.
 * ``monthly_net_invoice_pln``: B2B, stated as net of VAT ("netto" / "+ VAT"), in PLN.
 
 Anything else keeps its nominal monthly band and is reported, not silently compared.
@@ -12,6 +15,7 @@ Anything else keeps its nominal monthly band and is reported, not silently compa
 
 import logging
 import math
+from collections.abc import Callable
 from typing import Any, Literal, Self
 
 from pydantic import BaseModel, ConfigDict, ValidationError, model_validator
@@ -22,6 +26,7 @@ from job_scout.generation.salary_constants import (
     ROUND_TRIP_TOLERANCE,
     WORKING_DAYS_PER_MONTH,
 )
+from job_scout.generation.uop import uop_monthly_gross_from_net, uop_monthly_net
 from job_scout.models import (
     JobOffer,
     SalaryContract,
@@ -65,6 +70,12 @@ class Band(BaseModel):
     min: float | None = None
     max: float | None = None
 
+    def mapped(self, fn: Callable[[float], float]) -> "Band":
+        return Band(
+            min=None if self.min is None else fn(self.min),
+            max=None if self.max is None else fn(self.max),
+        )
+
     def scaled(self, factor: float) -> "Band":
         return Band(
             min=None if self.min is None else self.min * factor,
@@ -86,6 +97,7 @@ class NormalizedSalary(BaseModel):
     monthly: Band
     annual: Band
     monthly_gross_pln_equivalent: Band | None = None
+    uop_monthly_net_estimate: Band | None = None
     monthly_net_invoice_pln: Band | None = None
 
     @model_validator(mode="after")
@@ -109,12 +121,24 @@ class NormalizedSalary(BaseModel):
             problems.append(f"monthly band converted back to {src.period} = {back} != source")
 
         is_pln = src.currency == "PLN"
-        uop_gross = is_pln and src.contract == SalaryContract.UOP and src.gross_net == SalaryGrossNet.GROSS
+        uop_stated = is_pln and src.contract == SalaryContract.UOP and src.gross_net in (
+            SalaryGrossNet.GROSS,
+            SalaryGrossNet.NET,
+        )
         b2b_net = is_pln and src.contract == SalaryContract.B2B and src.gross_net == SalaryGrossNet.NET
-        if (self.monthly_gross_pln_equivalent is not None) != uop_gross:
-            problems.append("monthly_gross_pln_equivalent is only defined for UoP gross PLN bands")
-        elif self.monthly_gross_pln_equivalent is not None and self.monthly_gross_pln_equivalent != self.monthly:
-            problems.append("monthly_gross_pln_equivalent must equal the monthly band")
+        gross_eq, net_est = self.monthly_gross_pln_equivalent, self.uop_monthly_net_estimate
+        if (gross_eq is not None) != uop_stated or (net_est is not None) != uop_stated:
+            problems.append(
+                "monthly_gross_pln_equivalent and uop_monthly_net_estimate are defined only for "
+                "UoP PLN bands stated as gross or net"
+            )
+        elif gross_eq is not None and net_est is not None:
+            stated = gross_eq if src.gross_net == SalaryGrossNet.GROSS else net_est
+            if stated != self.monthly:
+                problems.append(f"the stated UoP band must equal the monthly band ({src.gross_net})")
+            back = gross_eq.mapped(uop_monthly_net)
+            if not (_close(back.min, net_est.min) and _close(back.max, net_est.max)):
+                problems.append(f"net of the gross equivalent {back} != net estimate {net_est}")
         if (self.monthly_net_invoice_pln is not None) != b2b_net:
             problems.append("monthly_net_invoice_pln is only defined for B2B net PLN bands")
         elif self.monthly_net_invoice_pln is not None and self.monthly_net_invoice_pln != self.monthly:
@@ -132,13 +156,13 @@ def normalize_salary(salary: SalaryRange) -> NormalizedSalary:
     )
     monthly = source_band.scaled(1.0 / _MONTHS_PER_PERIOD[salary.period])
     is_pln = salary.currency == "PLN"
-    gross_equiv = (
-        monthly
-        if is_pln
-        and salary.contract == SalaryContract.UOP
-        and salary.gross_net == SalaryGrossNet.GROSS
-        else None
-    )
+    gross_equiv: Band | None = None
+    net_estimate: Band | None = None
+    if is_pln and salary.contract == SalaryContract.UOP:
+        if salary.gross_net == SalaryGrossNet.GROSS:
+            gross_equiv, net_estimate = monthly, monthly.mapped(uop_monthly_net)
+        elif salary.gross_net == SalaryGrossNet.NET:
+            gross_equiv, net_estimate = monthly.mapped(uop_monthly_gross_from_net), monthly
     net_invoice = (
         monthly
         if is_pln
@@ -152,6 +176,7 @@ def normalize_salary(salary: SalaryRange) -> NormalizedSalary:
         monthly=monthly,
         annual=monthly.scaled(MONTHS_PER_YEAR),
         monthly_gross_pln_equivalent=gross_equiv,
+        uop_monthly_net_estimate=net_estimate,
         monthly_net_invoice_pln=net_invoice,
     )
 
