@@ -1,0 +1,29 @@
+{
+  "_note": "SYNTHETIC. Requirement strings written by hand for the semantic-skew injection experiment (evals/skew/experiment.py). They are not scraped listings. Each topic is absent from the fixture requirement strings in evals/skew/baselines/semantic/requirements.json (checked by keyword on 2026-11-08, 626 strings). Each topic mixes English, Polish and Ukrainian on purpose: a cross-lingual embedder should still group it, a word-level TF-IDF cannot.",
+  "topics": {
+    "beam_languages": [
+      "Commercial experience with Gleam or Elixir on the BEAM virtual machine",
+      "Building fault-tolerant services with OTP supervisors in Elixir",
+      "Doświadczenie w programowaniu w Elixirze i znajomość OTP",
+      "Досвід розробки на Elixir та Gleam з використанням OTP"
+    ],
+    "quantum_computing": [
+      "Hands-on experience with Qiskit and quantum circuit design",
+      "Understanding of quantum algorithms such as Grover and QAOA",
+      "Znajomość obliczeń kwantowych i biblioteki Qiskit",
+      "Знання квантових обчислень та бібліотеки Qiskit"
+    ],
+    "smart_contracts": [
+      "Experience writing and auditing Solidity smart contracts",
+      "Knowledge of EVM internals and gas optimisation for smart contracts",
+      "Doświadczenie w tworzeniu smart kontraktów w języku Solidity",
+      "Досвід написання смарт-контрактів на Solidity"
+    ],
+    "game_engines": [
+      "Gameplay programming in Unreal Engine 5 with C++ and Blueprints",
+      "Experience optimising rendering performance in Unreal Engine",
+      "Programowanie rozgrywki w Unreal Engine 5 (C++, Blueprints)",
+      "Досвід програмування геймплею в Unreal Engine 5"
+    ]
+  }
+}

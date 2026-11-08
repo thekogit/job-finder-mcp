@@ -1,0 +1,172 @@
+{
+ "board": "rocketjobs",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "html:listing": {
+   "samples": 2,
+   "min_links": 50,
+   "max_links": 50
+  },
+  "jsonld:detail": {
+   "samples": 3,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.@context": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.datePosted": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.logo": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.sameAs": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.addressCountry": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.addressLocality": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.addressRegion": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.postalCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation.address.streetAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobLocationType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.validThrough": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    }
+   }
+  }
+ }
+}

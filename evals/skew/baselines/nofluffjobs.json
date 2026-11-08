@@ -1,0 +1,286 @@
+{
+ "board": "nofluffjobs",
+ "source": "tests/fixtures (recorded 2026-10-11/12 during the JS-MCP-001 build)",
+ "kinds": {
+  "html:listing": {
+   "samples": 2,
+   "min_links": 20,
+   "max_links": 40
+  },
+  "jsonld:detail": {
+   "samples": 3,
+   "paths": {
+    "$": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements[].@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.applicantLocationRequirements[].name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.currency": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.value": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.value.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.value.unitText": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.baseSalary.value.value": {
+     "types": [
+      "int"
+     ],
+     "presence": 3
+    },
+    "$.datePosted": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.directApply": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.employmentType": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.experienceRequirements": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.experienceRequirements.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.experienceRequirements.description": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.logo": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.name": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.hiringOrganization.sameAs": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.industry": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.jobBenefits": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.jobBenefits[]": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.jobImmediateStart": {
+     "types": [
+      "bool"
+     ],
+     "presence": 3
+    },
+    "$.jobLocation": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.address": {
+     "types": [
+      "dict"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.address.@type": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.address.addressCountry": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.address.addressLocality": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.address.postalCode": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocation.address.streetAddress": {
+     "types": [
+      "str"
+     ],
+     "presence": 1
+    },
+    "$.jobLocationType": {
+     "types": [
+      "str"
+     ],
+     "presence": 2
+    },
+    "$.occupationalCategory": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.skills": {
+     "types": [
+      "list"
+     ],
+     "presence": 3
+    },
+    "$.skills[]": {
+     "types": [
+      "dict"
+     ],
+     "presence": 3
+    },
+    "$.skills[].type": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.skills[].value": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.title": {
+     "types": [
+      "str"
+     ],
+     "presence": 3
+    },
+    "$.validThrough": {
+     "types": [
+      "null"
+     ],
+     "presence": 3
+    }
+   }
+  }
+ }
+}
