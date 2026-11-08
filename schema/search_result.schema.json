@@ -1,5 +1,30 @@
 {
   "$defs": {
+    "Evidence": {
+      "additionalProperties": false,
+      "description": "A verbatim quote from the listing that supports one extracted field.",
+      "properties": {
+        "field": {
+          "enum": [
+            "seniority",
+            "work_mode"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "quote": {
+          "minLength": 1,
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "quote"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
     "JobOffer": {
       "additionalProperties": false,
       "properties": {
@@ -178,6 +203,48 @@
           },
           "title": "Also On",
           "type": "array"
+        },
+        "seniority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Seniority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "seniority_evidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Evidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "seniority_confidence": {
+          "default": "not_found",
+          "enum": [
+            "quoted",
+            "not_found"
+          ],
+          "title": "Seniority Confidence",
+          "type": "string"
+        },
+        "work_mode_evidence": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Evidence"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
         }
       },
       "required": [
@@ -283,6 +350,17 @@
       ],
       "title": "SalaryRange",
       "type": "object"
+    },
+    "Seniority": {
+      "enum": [
+        "intern",
+        "junior",
+        "mid",
+        "senior",
+        "lead"
+      ],
+      "title": "Seniority",
+      "type": "string"
     },
     "SourceFetchStatus": {
       "enum": [

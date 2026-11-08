@@ -1,4 +1,5 @@
 import html
+import re
 
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
@@ -54,3 +55,24 @@ def truncate_description(
 
     cut = cut.rstrip() + "\u2026"
     return (cut, True)
+
+
+_QUOTE_WHITESPACE = re.compile(r"\s+")
+
+
+def normalize_for_quote(text: str) -> str:
+    """Normalise text before a verbatim-quote substring check.
+
+    Only whitespace is touched: NBSP / narrow NBSP become plain spaces and every run of
+    whitespace collapses to one space. Case, diacritics and punctuation are kept, so a
+    quote must still be a real substring of the listing (no translation, no case folding).
+    """
+    replaced = text.replace("\xa0", " ").replace("\u202f", " ")
+    return _QUOTE_WHITESPACE.sub(" ", replaced).strip()
+
+
+def is_verbatim_quote(quote: str, source_text: str) -> bool:
+    normalized_quote = normalize_for_quote(quote)
+    if not normalized_quote:
+        return False
+    return normalized_quote in normalize_for_quote(source_text)

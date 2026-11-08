@@ -7,6 +7,8 @@ from zoneinfo import ZoneInfo
 
 from pydantic import BaseModel, ConfigDict, Field, model_validator
 
+from job_scout.normalize.text import is_verbatim_quote
+
 WARSAW_TZ = ZoneInfo("Europe/Warsaw")
 
 
@@ -75,6 +77,23 @@ class SalaryRange(BaseModel):
         return self
 
 
+class Seniority(StrEnum):
+    INTERN = "intern"
+    JUNIOR = "junior"
+    MID = "mid"
+    SENIOR = "senior"
+    LEAD = "lead"
+
+
+class Evidence(BaseModel):
+    """A verbatim quote from the listing that supports one extracted field."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    field: Literal["seniority", "work_mode"]
+    quote: str = Field(min_length=1)
+
+
 class JobOffer(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -100,6 +119,28 @@ class JobOffer(BaseModel):
     last_checked_at: str
     is_valid: bool = True
     also_on: list[str] = Field(default_factory=list)
+    seniority: Seniority | None = None
+    seniority_evidence: Evidence | None = None
+    seniority_confidence: Literal["quoted", "not_found"] = "not_found"
+    work_mode_evidence: Evidence | None = None
+
+    @model_validator(mode="after")
+    def _check_evidence_is_verbatim(self) -> Self:
+        source_text = f"{self.title}\n{self.description}"
+        bad: list[str] = []
+        for evidence in (self.seniority_evidence, self.work_mode_evidence):
+            if evidence is not None and not is_verbatim_quote(evidence.quote, source_text):
+                bad.append(f"{evidence.field}: {evidence.quote!r}")
+        if bad:
+            raise ValueError(
+                "evidence quotes are not substrings of the listing title/description: "
+                + "; ".join(bad)
+            )
+        if self.seniority is not None and self.seniority_evidence is None:
+            raise ValueError("seniority is set without a verbatim seniority_evidence quote")
+        if self.seniority_confidence == "quoted" and self.seniority is None:
+            raise ValueError("seniority_confidence is 'quoted' but seniority is empty")
+        return self
 
 
 class SourceFetchStatus(StrEnum):
